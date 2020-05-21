@@ -14,16 +14,20 @@
 </head>
 
 <body>
-  <div id="portrait"></div>
+  <div id="portrait">
+    <h1 class="greeting">Hi, I'm Brian!</h1>
+    <h2 class="greeting">Engineer, Designer, Analyst</h2>
+  </div>
 
   <div id="container_main">
 
     <div id="greeting_container">
-      <h1 id="greeting">Hi, I'm Brian</h1>
+      <!-- <h1 class="greeting">Hi, I'm Brian</h1>
+      <h2 class="greeting">Engineer, Designer, Analyst</h2> -->
     </div>
 
     <div id="titles">
-      <span class="title">Designer</span> <span class="divider">|</span> <span class="title">Analyst</span> <span class="divider">|</span>|<span class="title">Engineer</span>
+      <span class="title">Projects</span> <span class="divider">|</span> <span class="title">Employment</span> <span class="divider">|</span>|<span class="title">Toolkit</span>
     </div>
 
     <div id="introduction_container">
@@ -38,21 +42,22 @@
       </p>
     </div>
 
-    <div id="icons_container">
-      <div class="icon">
-        <img src="{{url_for('static', filename='img/lego.png')}}">
-      </div>
-      <div class="icon">
-        <img src="{{url_for('static', filename='img/tools.png')}}">
-      </div>
-      <div class="icon">
-        <img src="{{url_for('static', filename='img/tie.png')}}">
-      </div>
-    </div>
-
   </div>
 
-  
+  <footer>
+    <div id="footer_container">
+      <div class="footer_icon">
+        <img src="{{url_for('static', filename='img/twitter.png')}}">
+      </div>
+      <div class="footer_icon">
+        <img src="{{url_for('static', filename='img/github.png')}}">
+      </div>
+      <div class="footer_icon">
+        <img src="{{url_for('static', filename='img/linkedin.png')}}">
+      </div>
+    </div>
+    <a href="mailto:breedenb@gmail.com">breedenb@gmail.com</a>
+  </footer>
   
 </body>
 </html>
