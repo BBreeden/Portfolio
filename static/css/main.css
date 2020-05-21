@@ -18,6 +18,10 @@ html {
     font-family: 'Quicksand', sans-serif;
 }
 
+a {
+    color: #f18800;
+}
+
 #container_main {
     display: flex;
     justify-content: center;
@@ -30,6 +34,11 @@ html {
     background: transparent;
     padding-bottom: 20px;
     padding-top: 20px;
+}
+
+#icons_container {
+    display: flex;
+    flex-direction: row;
 }
 
 #introduction_container {
@@ -58,6 +67,10 @@ html {
     color: white;
 }
 
+.icon {
+    margin: 25px 30px 30px 10px;
+}
+
 .introduction_text{
     color: white;
     letter-spacing: 0.1em;
@@ -65,5 +78,5 @@ html {
 }
 
 .title {
-    color: orange;
+    color: #f18800;
 }
