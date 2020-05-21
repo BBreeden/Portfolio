@@ -1,7 +1,41 @@
-html {
-    font-family: 'Quicksand', sans-serif;
+body {
+    background-color: black;
 }
 
 h1 {
     font-weight: normal;
+    color: white;
+
 }
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#container_main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#greeting_container {
+    text-align: center;
+    background: transparent;
+}
+
+#portrait {
+    background-image: url( ../img/portrait_land.jpg );
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: -50px;
+    padding-top: 50px;
+}
+
+
