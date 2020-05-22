@@ -63,7 +63,7 @@ html {
     flex-direction: row;
 }
 
-#introduction_container {
+#introduction_container, #projects_container {
     max-width: 900px;
     padding: 20px;
 }
@@ -79,6 +79,23 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+}
+
+#projects {
+    background-image: url( ../img/projects.png );
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects_container {
+    display: flex;
 }
 
 #titles {
