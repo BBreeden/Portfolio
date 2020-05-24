@@ -11,19 +11,33 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
+
+  <!-- Fade in arrows on page load. -->
+  <script>
+      $(document).ready(function(){
+      $('#arrow_port_1').delay(500).fadeIn(1000);
+      $('#arrow_port_2').delay(1000).fadeIn(1000);
+      });
+  </script>
+
   <div id="portrait">
-    <h1 class="greeting">Hi, I'm Brian!</h1>
-    <h2 class="greeting">Engineer, Designer, Analyst</h2>
+    <div id="arrow_port_container">
+      <img id ="arrow_port_2" class="arrow_port" src="{{ url_for('static', filename='img/arrow.png') }}">
+      <img id ="arrow_port_1" class="arrow_port" src="{{ url_for('static', filename='img/arrow.png') }}">
+    </div>
+    
   </div>
 
   <div id="container_main">
 
     <div id="greeting_container">
-      <!-- <h1 class="greeting">Hi, I'm Brian</h1>
-      <h2 class="greeting">Engineer, Designer, Analyst</h2> -->
+      <h1 class="greeting">Hi, I'm Brian!</h1>
+      <h2 class="greeting">Engineer, Designer, Analyst</h2>
     </div>
 
     <div id="titles">
