@@ -72,7 +72,6 @@ html {
 }
 
 #greeting_container {
-    text-align: center;
     background: transparent;
     padding-bottom: 20px;
     padding-top: 20px;
@@ -86,6 +85,15 @@ html {
 #introduction_container, #projects_container, #employment_container, #toolkit_container {
     max-width: 900px;
     padding: 20px;
+}
+
+#introduction {
+    background-color: #080808;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #portrait {
@@ -114,7 +122,7 @@ html {
     justify-content: center;
 }
 
-#projects_container {
+#projects_container, #introduction_container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
