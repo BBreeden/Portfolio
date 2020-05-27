@@ -44,6 +44,7 @@ html {
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
+    min-height: 55px;
 }
 
 #container_main {
@@ -95,6 +96,13 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#port_greeting_container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    display: none;
 }
 
 #portrait {

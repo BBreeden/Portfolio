@@ -18,21 +18,26 @@
 
 <body>
 
-  <!-- Fade in arrows on page load. -->
+  <!-- Fade in arrows/greeting on page load. -->
   <script>
       $(document).ready(function(){
+      $('#port_greeting_container').fadeIn(1000);
       $('#arrow_port_1').delay(500).fadeIn(1000);
       $('#arrow_port_2').delay(1000).fadeIn(1000);
       });
   </script>
 
   <div id="portrait">
+    <div id="port_greeting_container">
+      <h1 class="greeting">Hi, I'm Brian!</h1>
+    </div>
+
     <div id="arrow_port_container">
       <a href="#introduction">
-        <img id ="arrow_port_2" class="arrow_port" src="{{ url_for('static', filename='img/arrow.png') }}">
+        <img id ="arrow_port_1" class="arrow_port" src="{{ url_for('static', filename='img/arrow.png') }}">
       </a>
       <a href="#introduction">
-        <img id ="arrow_port_1" class="arrow_port" src="{{ url_for('static', filename='img/arrow.png') }}">
+        <img id ="arrow_port_2" class="arrow_port" src="{{ url_for('static', filename='img/arrow.png') }}">
       </a>
     </div>
     
@@ -43,7 +48,7 @@
     <div id="introduction">
       <div id="introduction_container">
         <div id="greeting_container">
-          <h1 class="greeting">Hi, I'm Brian!</h1>
+          <h1 class="greeting">Brian Breeden</h1>
           <h2 class="greeting">Engineer, Designer, Analyst</h2>
         </div>
 
