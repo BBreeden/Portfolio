@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="{{ url_for('static', filename='js/scroll.js') }}"></script>
 </head>
 
 <body>
@@ -27,8 +28,12 @@
 
   <div id="portrait">
     <div id="arrow_port_container">
-      <img id ="arrow_port_2" class="arrow_port" src="{{ url_for('static', filename='img/arrow.png') }}">
-      <img id ="arrow_port_1" class="arrow_port" src="{{ url_for('static', filename='img/arrow.png') }}">
+      <a href="#introduction">
+        <img id ="arrow_port_2" class="arrow_port" src="{{ url_for('static', filename='img/arrow.png') }}">
+      </a>
+      <a href="#introduction">
+        <img id ="arrow_port_1" class="arrow_port" src="{{ url_for('static', filename='img/arrow.png') }}">
+      </a>
     </div>
     
   </div>
@@ -43,7 +48,10 @@
         </div>
 
         <div id="titles">
-          <span class="title">Projects</span> <span class="divider">|</span> <span class="title">Employment</span> <span class="divider">|</span>|<span class="title">Toolkit</span><span class="divider"> | </span><span class="title">Contact</span>
+          <a href="#projects"><span class="title">Projects</span></a><span class="divider"> | </span>
+          <a href="#employment"><span class="title">Employment</span></a><span class="divider"> | </span>
+          <a href="#toolkit"><span class="title">Toolkit</span></a>
+          <!-- <a href="#footer_container"><span class="title">Contact</span></a> -->
         </div>
 
           <p class="introduction_text">

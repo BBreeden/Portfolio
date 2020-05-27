@@ -37,6 +37,7 @@ html, body {
 
 html {
     font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
 }
 
 #arrow_port_container {
