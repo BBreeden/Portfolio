@@ -41,6 +41,18 @@ html {
     scroll-behavior: smooth;
 }
 
+input, textarea {
+    border-radius: 5px;
+}
+
+label {
+    color: white;
+}
+
+textarea {
+    resize: none;
+}
+
 #arrow_port_container {
     display: flex;
     flex-direction: column;
@@ -74,10 +86,17 @@ html {
     padding-bottom: 10px
 }
 
+#form {
+    padding-top: 10px;
+}
+
+#form_name, #form_email {
+    width: 200px;
+}
+
 #greeting_container {
     background: transparent;
     padding-bottom: 20px;
-    padding-top: 20px;
 }
 
 #icons_container {
