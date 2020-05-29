@@ -60,6 +60,11 @@ textarea {
     min-height: 55px;
 }
 
+#contact_form_link {
+    margin-top: 10px;
+    font-size: large;
+}
+
 #container_main {
     display: flex;
     justify-content: center;
@@ -87,11 +92,16 @@ textarea {
 }
 
 #form {
-    padding-top: 10px;
+    padding-top: 15px;
+    display: none;
 }
 
 #form_name, #form_email {
     width: 200px;
+}
+
+#form_header {
+    padding-bottom: 5px;
 }
 
 #greeting_container {
@@ -196,10 +206,6 @@ textarea {
 .footer_icon {
     padding-left: 7px;
     padding-right: 7px;
-}
-
-.greeting {
-
 }
 
 .icon {
