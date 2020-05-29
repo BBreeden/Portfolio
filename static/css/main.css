@@ -7,13 +7,16 @@ body {
     background-color: #080808;
 }
 
-button {
+button, #submit_button {
     border: none;
     background-color: transparent;
     color: #f18800;
     cursor: pointer;
-    font-size: 22px;
     padding: 0;
+}
+
+button {
+    font-size: 22px;
 }
 
 footer {
@@ -185,6 +188,10 @@ textarea {
     display: flex;
     align-items: flex-end;
     margin-bottom: 20px;
+}
+
+#submit_button {
+    font-size: 16px;
 }
 
 #titles {
