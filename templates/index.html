@@ -18,8 +18,8 @@
 
 <body>
 
-  <!-- Fade in arrows/greeting on page load. -->
   <script>
+    // Controls the fade in animations for the arrows on the landing portrait.
       $(document).ready(function(){
       $('#port_greeting_container').fadeIn(1000);
       $('#arrow_port_1').delay(500).fadeIn(1000);
@@ -45,6 +45,7 @@
 
   <div id="container_main">
 
+    <!-- INTRODUCTION -->
     <div id="introduction">
       <div id="introduction_container">
         <div id="greeting_container">
@@ -66,13 +67,13 @@
           <div id="form">
             <div id="form_container">
               <form>
-                <label for="form_name">Name:</label><br />
+                <label for="form_name" id="form_name_label">Name:</label><br />
                 <input type="text" id="form_name" name="form_name" required><br />
 
-                <label for="form_email">Email:</label><br />
+                <label for="form_email" id="email_form_label">Email:</label><br />
                 <input type="text" id="form_email" name="form_email" required><br />
 
-                <label for="form_message">Message:</label><br />
+                <label for="form_message" id="form_message_label">Message:</label><br />
                 <textarea id="form_message" name="form_message" rows="10" cols="50" required></textarea> <br />
 
                 <input id="submit_button" type="submit" value="Send">
@@ -85,7 +86,7 @@
       </div>
     </div>
 
-
+    <!-- PROJECTS -->
     <div id="projects">
         <div id="projects_container">
           <div id="projects_header">
@@ -104,7 +105,7 @@
         </div>
     </div>
 
-
+    <!-- EMPLOYMENT -->
     <div id="employment">
       <div id="employment_container">
         <div id="employment_header">
@@ -123,6 +124,7 @@
       </div>
     </div>
 
+    <!-- TOOLKIT -->
     <div id="toolkit">
       <div id="toolkit_container">
         <div id="toolkit_header">
@@ -161,9 +163,9 @@
     <a href="mailto:breedenb@gmail.com">breedenb@gmail.com</a>
   </footer>
 
-  <script>
-    // These scripts are used to animate the contact form.
 
+  <!-- TODO: This can be removed once we refactor the link into a button instead. -->
+  <script>
     // Grab the link that will be used to display the form.
     var a = document.getElementById("contact_form_link");
 
@@ -171,6 +173,21 @@
         document.getElementById("form").style.display = "inline";
         return false;
     }
+  </script>
+
+  <script>
+    // This script controls the fade animations for the contact form.
+    var base = 100;
+
+    $('#contact_form_link').click(function() {
+      $('#form_name_label').fadeIn(base*2);
+      $('#form_name').delay(base).fadeIn(base*2);
+      $('#email_form_label').delay(base*2).fadeIn(base*2);
+      $('#form_email').delay(base*3).fadeIn(base*2);
+      $('#form_message_label').delay(base*4).fadeIn(base*2);
+      $('#form_message').delay(base*5).fadeIn(base*2);
+      $('#submit_button').delay(base*6).fadeIn(base*2);
+    })
   </script>
   
 </body>
