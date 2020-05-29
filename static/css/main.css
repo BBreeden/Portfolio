@@ -7,6 +7,15 @@ body {
     background-color: #080808;
 }
 
+button {
+    border: none;
+    background-color: transparent;
+    color: #f18800;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 0;
+}
+
 footer {
     background-color: white;
     text-align: center;

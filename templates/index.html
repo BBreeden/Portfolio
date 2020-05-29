@@ -63,7 +63,8 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed orci convallis, malesuada arcu id, sollicitudin ex. Quisque convallis est id ex efficitur cursus. Nulla ut justo dapibus, ultricies nisl sed, congue tellus. Suspendisse condimentum enim mauris, id pellentesque magna efficitur a. Sed congue tellus nec elementum sagittis. Aliquam sit amet massa urna. Vestibulum risus velit, tincidunt sit amet purus sed, suscipit pulvinar odio. Nullam convallis eros sit amet consequat pretium.
           </p>
 
-          <a id="contact_form_link" href="nextlaunch.info">Let's get in touch!</a>
+
+          <button type="button" id="contact_form_button">Let's get in touch!</button>
           <div id="form">
             <div id="form_container">
               <form>
@@ -163,23 +164,12 @@
     <a href="mailto:breedenb@gmail.com">breedenb@gmail.com</a>
   </footer>
 
-
-  <!-- TODO: This can be removed once we refactor the link into a button instead. -->
-  <script>
-    // Grab the link that will be used to display the form.
-    var a = document.getElementById("contact_form_link");
-
-    a.onclick = function () {
-        document.getElementById("form").style.display = "inline";
-        return false;
-    }
-  </script>
-
   <script>
     // This script controls the fade animations for the contact form.
     var base = 100;
 
-    $('#contact_form_link').click(function() {
+    $('#contact_form_button').click(function() {
+      $('#form').show();
       $('#form_name_label').fadeIn(base*2);
       $('#form_name').delay(base).fadeIn(base*2);
       $('#email_form_label').delay(base*2).fadeIn(base*2);
