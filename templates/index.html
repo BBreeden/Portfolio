@@ -70,7 +70,7 @@
 
               {% block content %}
 
-              <form method='POST' action='/'>
+              <form method='POST' action="{{ url_for('process_form') }}">
                 {{ form.name.label(id='form_name_label') }} <br />
                 {{ form.name(id='form_name') }}<br />
 
