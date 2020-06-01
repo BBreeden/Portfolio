@@ -67,18 +67,26 @@
           <button type="button" id="contact_form_button">Let's get in touch!</button>
           <div id="form">
             <div id="form_container">
-              <form>
-                <label for="form_name" id="form_name_label">Name:</label><br />
-                <input type="text" id="form_name" name="form_name" required><br />
 
-                <label for="form_email" id="email_form_label">Email:</label><br />
-                <input type="text" id="form_email" name="form_email" required><br />
+              {% block content %}
 
-                <label for="form_message" id="form_message_label">Message:</label><br />
-                <textarea id="form_message" name="form_message" rows="10" cols="50" required></textarea> <br />
+              <form method='POST' action='/'>
+                {{ form.name.label(id='form_name_label') }} <br />
+                {{ form.name(id='form_name') }}<br />
 
-                <input id="submit_button" type="submit" value="Send">
+                {{ form.email.label(id='email_form_label') }}<br />
+                {{ form.email(id='form_email') }}<br />
+
+                {{ form.body.label(id='form_message_label') }}<br />
+                {{ form.body(cols="40", rows="5", id='form_message') }}<br />
+
+                {{ form.submit(id='submit_button') }}
               </form>
+
+              {% endblock %}
+
+
+
             </div>
           </div>
 
