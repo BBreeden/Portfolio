@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash
 from flask_mail import Mail, Message
 from forms import ContactForm
 import os
@@ -16,17 +16,14 @@ app.config.update(dict(
     MAIL_PORT = 465,
     MAIL_USE_TLS = False,
     MAIL_USE_SSL = True,
-    MAIL_USERNAME = '',
-    MAIL_PASSWORD = ''
+    MAIL_USERNAME = 'bbtimeless',
+    MAIL_PASSWORD = 'Chaos10187##'
 ))
 mail = Mail(app)
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     form = ContactForm()
-    # if form.validate_on_submit():
-    #     return 'Submitted! This will eventually change.'
-
     return render_template('index.html', form=form)
 
 @app.route('/process_form', methods=['POST'])
