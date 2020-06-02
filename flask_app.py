@@ -31,7 +31,7 @@ def index():
 
 @app.route('/process_form', methods=['POST'])
 def process_form():
-    msg = Message('TEST', sender='bbtimeless@gmail.com', recipients=['breedenb@gmail.com'])
-    msg.body = 'This is a test email'
+    msg = Message('A Message from your Portfolio', sender='bbtimeless@gmail.com', recipients=['breedenb@gmail.com'])
+    msg.body = (request.form['name'] + '\n' + request.form['email'] + '\n' + request.form['body'])
     mail.send(msg)
     return 'Ta DA!'
