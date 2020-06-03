@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, flash
+from flask import Flask, render_template, request, flash, redirect, url_for
 from flask_mail import Mail, Message
 from forms import ContactForm
 import os
@@ -16,8 +16,8 @@ app.config.update(dict(
     MAIL_PORT = 465,
     MAIL_USE_TLS = False,
     MAIL_USE_SSL = True,
-    MAIL_USERNAME = 'bbtimeless',
-    MAIL_PASSWORD = 'Chaos10187##'
+    MAIL_USERNAME = '',
+    MAIL_PASSWORD = ''
 ))
 mail = Mail(app)
 
@@ -26,9 +26,12 @@ def index():
     form = ContactForm()
     return render_template('index.html', form=form)
 
-@app.route('/process_form', methods=['POST'])
+@app.route('/process_form', methods=['GET','POST'])
 def process_form():
-    msg = Message('A Message from your Portfolio', sender='bbtimeless@gmail.com', recipients=['breedenb@gmail.com'])
-    msg.body = (request.form['name'] + '\n' + request.form['email'] + '\n' + request.form['body'])
-    mail.send(msg)
-    return 'Ta DA!'
+    if request.method == 'POST':
+        # msg = Message('A Message from your Portfolio', sender='bbtimeless@gmail.com', recipients=['breedenb@gmail.com'])
+        # msg.body = (request.form['name'] + '\n' + request.form['email'] + '\n' + request.form['body'])
+        # mail.send(msg)
+        return 'Ta DA!'
+    elif request.method == 'GET':
+        return redirect(url_for('index'))
