@@ -106,7 +106,7 @@ textarea {
 #form {
     padding-top: 15px;
     display: none;
-    height: 280px;
+    height: 220px;
 }
 
 #form_name, #form_email {
@@ -250,4 +250,10 @@ textarea {
 
 .title {
     color: #f18800;
+}
+
+@media only screen and (max-height: 800px){
+    #introduction, #projects, #employment, #toolkit{
+        height: auto;
+    }
 }
