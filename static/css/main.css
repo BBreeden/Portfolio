@@ -26,22 +26,20 @@ footer {
     padding-bottom: 10px;
 }
 
+h1, h2, h3 {
+    color: white;
+    margin: 0;
+}
+
 h1 {
     font-weight: normal;
-    color: white;
     font-size: 3em;
-    margin: 0;
 }
 
 h2 {
-    color: white;
     font-weight: lighter;
-    margin: 0;
 }
 
-h3 {
-    margin: 0;
-}
 
 html, body {
     height: 100%;
@@ -216,6 +214,10 @@ textarea {
     display: none;
 }
 
+.css {
+    color: lightblue;
+}
+
 .divider, .title {
     font-size: 28px;
 }
@@ -229,6 +231,10 @@ textarea {
     padding-right: 7px;
 }
 
+.html {
+    color: lightgoldenrodyellow;
+}
+
 .icon {
     margin-right: 15px;
 }
@@ -238,6 +244,28 @@ textarea {
     letter-spacing: 0.1em;
     font-size: 16px;
 }
+
+.javascript {
+    color: lightpink;
+}
+
+.project_img {
+    padding-right: 20px;
+}
+
+.project_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.python {
+    color: lightgreen;
+}
+
+
 
 #thanks {
     display: flex;
