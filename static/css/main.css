@@ -295,4 +295,12 @@ textarea {
     #introduction, #projects, #employment, #toolkit{
         height: auto;
     }
+
+    #arrow_port_container {
+        display: none !important;
+    }
+
+    #form, #form_name_label, #form_name, #email_form_label, #form_email, #form_message_label, #form_message, #submit_button {
+        display: inline;
+    }
 }
