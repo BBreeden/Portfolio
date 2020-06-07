@@ -3,6 +3,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: lightgray;
+}
+
 body {
     background-color: #080808;
 }
