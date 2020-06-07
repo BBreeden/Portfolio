@@ -23,6 +23,10 @@ button {
     font-size: 22px;
 }
 
+button:hover {
+    color: lightgray;
+}
+
 footer {
     background-color: white;
     text-align: center;
@@ -72,6 +76,10 @@ textarea {
     flex-direction: column;
     padding-bottom: 20px;
     min-height: 55px;
+}
+
+button:hover {
+    color: lightgray;
 }
 
 #contact_form_link {
@@ -195,6 +203,9 @@ textarea {
 #submit_button {
     font-size: 16px;
 }
+#submit_button:hover {
+    color: lightgray;
+}
 
 #titles {
     text-align: center;
@@ -283,6 +294,15 @@ textarea {
 .title {
     color: #f18800;
 }
+
+/* This is for title classes that are links only. */
+a .title:hover {
+    color:lightgray;
+}
+
+/* 
+Resolution Settings
+*/
 
 @media only screen and (max-height: 600px){
     #introduction, #projects, #employment, #toolkit{
