@@ -207,7 +207,7 @@ button:hover {
     color: lightgray;
 }
 
-#titles {
+#menu {
     text-align: center;
     letter-spacing: 0.2em;
 }
@@ -233,7 +233,7 @@ button:hover {
     color: lightblue;
 }
 
-.divider, .title {
+.divider, .menu_item {
     font-size: 28px;
 }
 
@@ -264,6 +264,10 @@ button:hover {
     color: lightpink;
 }
 
+.jupyter {
+    color: lightsalmon;
+}
+
 .project_img {
     padding-right: 20px;
 }
@@ -272,8 +276,8 @@ button:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .python {
@@ -292,11 +296,12 @@ button:hover {
 }
 
 .title {
-    color: #f18800;
+    color: white;
+    font-size: 28px;
 }
 
-/* This is for title classes that are links only. */
-a .title:hover {
+/* This is for menu classes that are links only. */
+a .menu_item:hover {
     color:lightgray;
 }
 
