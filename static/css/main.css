@@ -48,6 +48,10 @@ h2 {
     font-weight: lighter;
 }
 
+hr {
+    color: white;
+}
+
 
 html, body {
     height: 100%;
@@ -63,12 +67,18 @@ input, textarea {
     border-radius: 5px;
 }
 
-label {
+label, li {
     color: white;
 }
 
 textarea {
     resize: none;
+}
+
+ul {
+    columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
 }
 
 #arrow_port_container {
@@ -212,6 +222,15 @@ button:hover {
     letter-spacing: 0.2em;
 }
 
+#thanks {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: auto;
+}
+
 #toolkit {
     background-image: url( ../img/skillset.png );
     height: 100vh;
@@ -239,6 +258,11 @@ button:hover {
 
 .divider {
     color: white;
+}
+
+.emp_item {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .footer_icon {
@@ -284,20 +308,10 @@ button:hover {
     color: lightgreen;
 }
 
-
-
-#thanks {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    width: auto;
-}
-
 .title {
     color: white;
     font-size: 28px;
+    font-weight: bolder;
 }
 
 /* This is for menu classes that are links only. */

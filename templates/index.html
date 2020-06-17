@@ -91,8 +91,6 @@
 
               {% endblock %}
 
-
-
             </div>
           </div>
 
@@ -105,7 +103,7 @@
     <div id="projects">
         <div id="projects_container">
           <div id="projects_header">
-            <img class="icon" src="{{ url_for('static', filename='img/lego.png') }}"> <h3 class="title">Projects</h3>
+            <!-- <img class="icon" src="{{ url_for('static', filename='img/lego.png') }}"> --><h3 class="title">Select Projects</h3>
           </div>
           
           <div class="project_item">
@@ -115,7 +113,7 @@
                 <span class="python">[Python]</span>
                 <span class="html">[HTML]</span>
                 <span class="css">[CSS]</span>
-                <span class="javascript">[JavaScript]</span>
+                <span class="javascript">[JavaScript/JQuery]</span>
               </p>
               <p class="introduction_text">
                 You are looking at it! This project was built from the ground up using Flask to display my select projects and professional background. <br />
@@ -149,7 +147,7 @@
               </p>
               <p class="introduction_text">
                 In this analysis, I explore the gender demographics in the United States Congress. Specifically, the number of women present in each Congressional session over time. <br />
-                <a href="https://github.com/BBreeden/women-congress/blob/master/Women%20in%20Congress%20Main.ipynb" target="_blank">Explore the notebook here.</a>
+                <a href="https://github.com/BBreeden/women-congress/blob/master/Women%20in%20Congress%20Main.ipynb" target="_blank">Explore the notebook.</a>
               </p>
             </div>
           </div>
@@ -163,17 +161,40 @@
     <div id="employment">
       <div id="employment_container">
         <div id="employment_header">
-          <img class="icon" src="{{ url_for('static', filename='img/tie.png') }}"> <h3 class="title">Employment</h3>
+          <!-- <img class="icon" src="{{ url_for('static', filename='img/tie.png') }}"> --><h3 class="title">Recent Employment</h3>
         </div>
+
+        <div class="emp_item">
+        <h3>Associate Quality Engineer - <a href="http://www.Alarm.com" target="_blank">Alarm.com</a> (2019-Present)</h3>
         <p class="introduction_text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed orci convallis, malesuada arcu id, sollicitudin ex. Quisque convallis est id ex efficitur cursus. Nulla ut justo dapibus, ultricies nisl sed, congue tellus. Suspendisse condimentum enim mauris, id pellentesque magna efficitur a. Sed congue tellus nec elementum sagittis. Aliquam sit amet massa urna. Vestibulum risus velit, tincidunt sit amet purus sed, suscipit pulvinar odio. Nullam convallis eros sit amet consequat pretium.
+          As a Quality Engineer, my primary duties involve extensive testing during the weekly build cycle and the certification of new products & features. My team focused on <a href="https://www.alarm.com/business-solutions/" target="_blank">Commercial</a> security systems and analytics. I was the lead QE on the following ceritification projects:
+          <ul>
+            <li>Project</li>
+            <li>Project</li>
+            <li>Project</li>
+            <li>Project</li>
+            <li>Project</li>
+            <li>Project</li>
+          </ul>
         </p>
+        </div>
+        <hr>
+
+        <div class="emp_item">
+        <h3>Campus Operations Specialist - <a href="http://www.lfcc.edu" target="_blank">Lord Fairfax Community College</a> (2017-2019)</h3>
         <p class="introduction_text">
-          Cras sed mattis erat. Donec maximus mauris eu est dignissim, a condimentum mauris cursus. Donec elementum elementum nisl. Nunc sed molestie turpis. Donec lobortis, lectus eget tempor dapibus, ex magna pulvinar nisi, id lacinia arcu nunc a nibh. Fusce lectus libero, consequat vel metus nec, convallis tempus quam. Mauris mauris purus, condimentum non ex quis, laoreet suscipit magna. Phasellus sagittis consectetur ex sit amet elementum. Nullam dapibus fermentum est, ut varius ipsum viverra nec. In hac habitasse platea dictumst. Maecenas id tellus mauris. In egestas non mi vel tristique.
+          My primary responsibilities were to work with college leadership to ensure campus activites and functions ran as smoothly as possible. This includes working directly with students to solve administrative problems, ensure faculty complied with contractual obligations, and coordinate with all departments within the college to prepare and run events.
         </p>
+        </div>
+        <hr>
+
+        <div class="emp_item">
+        <h3>Program Assistant - <a href="http://www.lfcc.edu" target="_blank">Lord Fairfax Community College</a> (2015-2017)</h3>
         <p class="introduction_text">
-          In enim nulla, semper ac velit eget, ullamcorper sollicitudin mauris. Maecenas ut finibus magna. Phasellus porttitor in ante non blandit. Maecenas eleifend, est quis ullamcorper pulvinar, felis sem blandit dolor, sit amet consequat felis sem eget dui. Pellentesque mauris ex, scelerisque finibus convallis vitae, imperdiet quis erat. Etiam commodo varius elit. Nunc sed varius est, ut varius elit.
+          I was privileged to be a part of a team that launched <a href="https://www.knowledgetowork.com/home.php" target="_blank">Knowledge to Work</a>. My role on the team was to assis the PHP developer with website feature testing,  collaborate with the digital librarian to organize digital learning materials, and gather & maintain project requirements during the various stages of development.
         </p>
+        </div>
+
         <a href="#introduction">Return to the top.</a>
       </div>
     </div>
@@ -182,7 +203,7 @@
     <div id="toolkit">
       <div id="toolkit_container">
         <div id="toolkit_header">
-          <img class="icon" src="{{ url_for('static', filename='img/tools.png') }}"> <h3 class="title">Toolkit</h3>
+          <!--<img class="icon" src="{{ url_for('static', filename='img/tools.png') }}">--><h3 class="title">Toolkit</h3>
         </div>
         <p class="introduction_text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed orci convallis, malesuada arcu id, sollicitudin ex. Quisque convallis est id ex efficitur cursus. Nulla ut justo dapibus, ultricies nisl sed, congue tellus. Suspendisse condimentum enim mauris, id pellentesque magna efficitur a. Sed congue tellus nec elementum sagittis. Aliquam sit amet massa urna. Vestibulum risus velit, tincidunt sit amet purus sed, suscipit pulvinar odio. Nullam convallis eros sit amet consequat pretium.
