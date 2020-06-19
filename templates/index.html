@@ -169,7 +169,7 @@
         <p class="introduction_text">
           As a Quality Engineer, my primary duties involve extensive testing during the weekly build cycle and the certification of new products & features. My team focused on <a href="https://www.alarm.com/business-solutions/" target="_blank">Commercial</a> security systems and analytics. I few of the certification projects that I led were:
           <ul>
-            <li>Commercial Reports</li>
+            <li><button class="btn_modal" id="com_reports">Commercial Reports</button></li>
             <li>Login Templates</li>
             <li>Nucleus Hub (Integration)</li>
             <li>Smarter Business Temperature Monitoring</li>
@@ -253,6 +253,16 @@
       $('#submit_button').delay(base*6).fadeIn(base*2);
     })
   </script>
+
+  <!-- Modal Template -->
+  <div id="modal_template">
+    <div id="modal_content">
+      <span id="modal_close">&times;</span>
+      <h3 id="modal_header"></h3>
+      <p id="modal_body"></p>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='js/modals.js') }}"></script>
   
 </body>
 </html>
