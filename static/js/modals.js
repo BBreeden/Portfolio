@@ -42,6 +42,6 @@ nuke_button.onclick = function() {
     modal.style.flexDirection = 'column';
     modal.style.alignItems = 'center';
     modal.style.justifyContent = 'center';
-    modal_header.innerHTML = 'Nucleus Hub';
-    modal_body.innerHTML = 'As the lead QE for this project, I collaborated with the Security Panels team to develop a new generation of security hub. This new product featured......';
+    modal_header.innerHTML = 'Point Hub';
+    modal_body.innerHTML = 'As the lead integration QE for this project, I collaborated with the Security Panels team to develop a new generation of security hub for our PointCentral partner. The Point Hub is a security hub that takes advantage of a dedicated cell connection, allowing the device to operate even if there is a loss of power and/or broadband signals. <br /><br /> <a href="https://www.pointcentral.com/hardware-partners/" target="_blank">Learn more about the Point Hub.</a>';
 }
