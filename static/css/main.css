@@ -169,6 +169,10 @@ button:hover {
     color: white;
 }
 
+#modal_body, #modal_header {
+    margin: 10px;
+}
+
 #modal_header {
     color: #f18800;
 }
@@ -176,7 +180,7 @@ button:hover {
 #modal_content{
     background-color: #272727;
     width: 600px;
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: 15px;
 }
 
@@ -212,6 +216,7 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    background-color: black;
 }
 
 #menu {
@@ -365,6 +370,19 @@ button:hover {
     color: white;
     font-size: 28px;
     font-weight: bolder;
+}
+.toolkit_desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+}
+
+.toolkit_element {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+
 }
 
 /* This is for menu classes that are links only. */

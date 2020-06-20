@@ -7,6 +7,7 @@ var modal_body = document.getElementById('modal_body');
 
 var com_rep_button = document.getElementById('com_reports');
 var login_tmps_button = document.getElementById('login_tmps');
+var nuke_button = document.getElementById('nuke');
 
 close_span.onclick = function (){
     modal.style.display = 'none';
@@ -34,4 +35,13 @@ login_tmps_button.onclick = function() {
     modal.style.justifyContent = 'center';
     modal_header.innerHTML = 'Login Templates';
     modal_body.innerHTML = 'For each security system, there are logins that a user can configure for other individuals to log into their system. This is a key part of the commercial domain due to the need to allow employees and other support staff access to the security system. This project allows the users to create templates for their logins. This enables our users to same time and maintain consistency across different login types. <br /><br />This feature is currently live to our commercial customers.';
+}
+
+nuke_button.onclick = function() {
+    modal.style.display = 'flex';
+    modal.style.flexDirection = 'column';
+    modal.style.alignItems = 'center';
+    modal.style.justifyContent = 'center';
+    modal_header.innerHTML = 'Nucleus Hub';
+    modal_body.innerHTML = 'As the lead QE for this project, I collaborated with the Security Panels team to develop a new generation of security hub. This new product featured......';
 }
