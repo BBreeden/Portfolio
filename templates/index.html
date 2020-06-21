@@ -56,11 +56,11 @@
         <div id="menu">
           <a href="#projects"><span class="menu_item">Projects</span></a><span class="divider"> | </span>
           <a href="#employment"><span class="menu_item">Employment</span></a><span class="divider"> | </span>
-          <a href="#toolkit"><span class="menu_item">Education</span></a>
+          <a href="#education"><span class="menu_item">Education</span></a>
         </div>
 
           <p class="introduction_text">
-            When I was four years old, I received my very first lego set. I didn't know it at the time, but I was already building a skillset. Legos train the builder to do several things. For example, it teaches us to read and apply documentation (in the form of an instruction manual), to break a larger project down into managable pieces, and to design reusable components that can be used multiple times.
+            When I was four years old, I received my very first lego set. I didn't know it at the time, but I was already building a skillset. Legos train the builder to do several things. For example, it teaches us to read and apply documentation (in the form of an instruction manual), to break a larger project down into managable pieces, and to design reusable components that can be used multiple times. I use these concepts everyday on the job and in my personal projects.
           </p>
           <p class="introduction_text">
             In my spare time, I enjoy learning new technologies and programming languages. I also enjoy <a href="https://unsplash.com/@bcbreeden" target="_blank">train spotting</a> and <a href="https://www.instagram.com/brian.breeden/" target="_blank">photography</a>.
@@ -103,7 +103,7 @@
     <div id="projects">
         <div id="projects_container">
           <div id="projects_header">
-            <!-- <img class="icon" src="{{ url_for('static', filename='img/lego.png') }}"> --><h3 class="title">Select Projects</h3>
+            <h3 class="title">Select Projects</h3>
           </div>
           
           <div class="project_item">
@@ -161,7 +161,7 @@
     <div id="employment">
       <div id="employment_container">
         <div id="employment_header">
-          <!-- <img class="icon" src="{{ url_for('static', filename='img/tie.png') }}"> --><h3 class="title">Recent Employment</h3>
+          <h3 class="title">Recent Employment</h3>
         </div>
 
         <div class="emp_item">
@@ -169,26 +169,12 @@
         <p class="introduction_text">
           As a Quality Engineer, my primary duties involve extensive testing during the weekly build cycle and the certification of new products & features. My team focused on <a href="https://www.alarm.com/business-solutions/" target="_blank">Commercial</a> security systems and analytics. I few of the certification projects that I led were:
           <ul>
-
-
-
-
-
-
             <li><button class="btn_modal" id="com_reports">Commercial Reports</button></li>
             <li><button class="btn_modal" id="login_tmps">Login Templates</button></li>
             <li><button class="btn_modal" id="nuke">Point Hub</button></li>
             <li>Smarter Business Temperature Monitoring</li>
             <li>Video Health Reporting</li>
             <li>Yale 500 Series Lock (Integration)</li>
-
-
-
-
-
-
-
-
           </ul>
         </p>
         </div>
@@ -213,19 +199,19 @@
       </div>
     </div>
 
-    <!-- TOOLKIT -->
-    <div id="toolkit">
-      <div id="toolkit_container">
+    <!-- Education -->
+    <div id="education">
+      <div id="education_container">
         
-        <div id="toolkit_header">
+        <div id="education_header">
           <h3 class="title">Education</h3>
         </div>
 
-        <div class="toolkit_element">
-          <div class="toolkit_logo">
+        <div class="education_element">
+          <div class="education_logo">
             <a href="https://vt.edu/" target="_blank"><img src="{{ url_for('static', filename='img/vt.png') }}"></a>
           </div>
-          <div class="toolkit_desc">
+          <div class="education_desc">
             <h3><a href="https://vtmit.vt.edu/" target="_blank">Masters of Information Technology</a></h3>
             <h3><a href="https://vtmit.vt.edu/academics/graduate-certificates.html" target="_blank">Graduate Certificate in Software Development</a></h3>
             <p class="introduction_text">
@@ -234,11 +220,11 @@
           </div>
         </div>
 
-        <div class="toolkit_element">
-          <div class="toolkit_logo">
+        <div class="education_element">
+          <div class="education_logo">
             <a href="https://su.edu" target="_blank"><img src="{{ url_for('static', filename='img/su.png') }}"></a>
           </div>
-          <div class="toolkit_desc">
+          <div class="education_desc">
             <h3><a href="https://www.su.edu/about-us/history/" target="_blank">Bachelors of Science in History</a></h3>
             <h3><a href="https://www.su.edu/arts/religion-2/" target="_blank">Bachelors of Arts in Religion</a></h3>
             <p class="introduction_text">
@@ -255,21 +241,6 @@
 
 
   </div>
-
-  <footer>
-    <div id="footer_container">
-      <div class="footer_icon">
-        <img src="{{url_for('static', filename='img/twitter.png')}}">
-      </div>
-      <div class="footer_icon">
-        <img src="{{url_for('static', filename='img/github.png')}}">
-      </div>
-      <div class="footer_icon">
-        <img src="{{url_for('static', filename='img/linkedin.png')}}">
-      </div>
-    </div>
-    <a href="mailto:breedenb@gmail.com">breedenb@gmail.com</a>
-  </footer>
 
   <script>
     // This script controls the fade animations for the contact form.

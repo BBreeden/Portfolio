@@ -151,7 +151,7 @@ button:hover {
     flex-direction: row;
 }
 
-#introduction_container, #projects_container, #employment_container, #toolkit_container {
+#introduction_container, #projects_container, #employment_container, #education_container {
     max-width: 900px;
     padding: 20px;
 }
@@ -263,7 +263,7 @@ button:hover {
     align-items: flex-start;
 }
 
-#projects_header, #employment_header, #toolkit_header {
+#projects_header, #employment_header, #education_header {
     display: flex;
     align-items: flex-end;
     margin-bottom: 20px;
@@ -285,7 +285,7 @@ button:hover {
     width: auto;
 }
 
-#toolkit {
+#education {
     background-image: url( ../img/skillset.png );
     height: 100vh;
     width: 100%;
@@ -371,14 +371,14 @@ button:hover {
     font-size: 28px;
     font-weight: bolder;
 }
-.toolkit_desc {
+.education_desc {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 25px;
 }
 
-.toolkit_element {
+.education_element {
     display: flex;
     flex-direction: row;
     padding-bottom: 20px;
@@ -395,7 +395,7 @@ Resolution Settings
 */
 
 @media only screen and (max-height: 600px){
-    #introduction, #projects, #employment, #toolkit{
+    #introduction, #projects, #employment, #education{
         height: auto;
     }
 }
@@ -406,7 +406,7 @@ Resolution Settings
         height: 70px;
     }
 
-    #introduction, #projects, #employment, #toolkit{
+    #introduction, #projects, #employment, #education{
         height: auto;
     }
 
