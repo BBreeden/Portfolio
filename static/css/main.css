@@ -314,6 +314,8 @@ button:hover {
 
 .btn_modal {
     font-size: 16px;
+    text-align: left;
+    vertical-align: text-top;
 }
 
 .css {
