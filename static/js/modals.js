@@ -10,6 +10,7 @@ var login_tmps_button = document.getElementById('login_tmps');
 var nuke_button = document.getElementById('nuke');
 var sbtm_button = document.getElementById('sbtm');
 var vhr_button = document.getElementById('vhr');
+var yale500_button = document.getElementById('yale500')
 
 close_span.onclick = function (){
     modal.style.display = 'none';
@@ -64,4 +65,13 @@ vhr_button.onclick = function() {
     modal.style.justifyContent = 'center';
     modal_header.innerHTML = 'Video Health Report'
     modal_body.innerHTML = 'One of the biggest concerns for our customers is security. The foundation of every good security system is the video cameras. Out team developed a report that gives our customers insight on the status of their video cameras. This includes performance metrics, camera status, camera snapshots, and recording hardware updates (known as a <a href="https://www.alarmgrid.com/faq/how-does-an-alarm-dot-com-svr-work" target="_blank">Stream Video Recorder</a>). <br /><br />As the lead on this quality project, I developed a test plan to verify each, individual performance metric. I also tested the report distribution systems and monitored performance with stressed video accounts. View a sample Video Health Report.'
+}
+
+yale500_button.onclick = function() {
+    modal.style.display = 'flex';
+    modal.style.display = 'column';
+    modal.style.alignItems = 'center';
+    modal.style.justifyContent = 'center';
+    modal_header.innerHTML = 'Yale 500 Series Lock Intergration'
+    modal_body.innerHTML = 'This project will always have a soft spot for me because this was the first certification project that I took the lead on. This project centered around the Yale 500 Series locks. This included hardware enrollment, security testing, user code management, and automation integrations. <br /><br />Learn more about these locks <a href="https://us.yalehome.com/en/news/news/2019/yale-launches-product-line-for-professional-installers/" target="_blank">here</a>.'
 }
