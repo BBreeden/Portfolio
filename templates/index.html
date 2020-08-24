@@ -58,6 +58,7 @@
           
           <div class="project_item">
             <div class="project_desc">
+              <img class="project_header" src="{{ url_for('static', filename='img/portfolio_header.jpg') }}">
               <h3><a href="{{ url_for('index') }}">Personal Portfolio</a></h3>
               <p class="project_tech_p">
                 <span class="python">[Python]</span>
@@ -115,7 +116,7 @@
         </div>
 
         <div class="emp_item">
-        <h3>Associate Quality Engineer - <a href="http://www.Alarm.com" target="_blank">Alarm.com</a> (2019-Present)</h3>
+        <h3>Quality Engineer - <a href="http://www.Alarm.com" target="_blank">Alarm.com</a> (2019-Present)</h3>
         <p class="introduction_text">
           As a Quality Engineer, my primary duties involve extensive testing during the weekly build cycle and the certification of new products & features. My team focused on <a href="https://www.alarm.com/business-solutions/" target="_blank">Commercial</a> security systems and analytics. I few of the certification projects that I led were:
           <ul>
@@ -141,7 +142,7 @@
         <div class="emp_item">
         <h3>Program Assistant - <a href="http://www.lfcc.edu" target="_blank">Lord Fairfax Community College</a> (2015-2017)</h3>
         <p class="introduction_text">
-          I was privileged to be a part of a team that launched <a href="https://www.knowledgetowork.com/home.php" target="_blank">Knowledge to Work</a>. My role on the team was to assis the PHP developer with website feature testing,  collaborate with the digital librarian to organize digital learning materials, and gather & maintain project requirements during the various stages of development.
+          I was privileged to be a part of a team that launched <a href="https://www.knowledgetowork.com/home.php" target="_blank">Knowledge to Work</a>. My role on the team was to assit the PHP developer with website feature testing,  collaborate with the digital librarian to organize digital learning materials, and gather & maintain project requirements during the various stages of development.
         </p>
         </div>
 
@@ -176,22 +177,6 @@
 
 
   </div>
-
-  <script>
-    // This script controls the fade animations for the contact form.
-    var base = 100;
-
-    $('#contact_form_button').click(function() {
-      $('#form').show();
-      $('#form_name_label').fadeIn(base*2);
-      $('#form_name').delay(base).fadeIn(base*2);
-      $('#email_form_label').delay(base*2).fadeIn(base*2);
-      $('#form_email').delay(base*3).fadeIn(base*2);
-      $('#form_message_label').delay(base*4).fadeIn(base*2);
-      $('#form_message').delay(base*5).fadeIn(base*2);
-      $('#submit_button').delay(base*6).fadeIn(base*2);
-    })
-  </script>
 
   <!-- Modal Template -->
   <div id="modal_template">
