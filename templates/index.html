@@ -28,17 +28,16 @@
         </div>
 
         <p class="introduction_text">
-          When I was four years old, I received my very first lego set. I didn't know it at the time, but I was already building a skillset. Legos train the builder to do several things. For example, it teaches us to read and apply documentation (in the form of an instruction manual), to break a larger project down into managable pieces, and to design reusable components that can be used multiple times. I use these concepts everyday on the job and in my personal projects.
+          I am a Quality Engineer who also likes to code! My favorite topics include Python, SQL, and JavaScript.
         </p>
         <p class="introduction_text">
-          In my spare time, I enjoy learning new technologies and programming languages. I also enjoy <a href="https://unsplash.com/@bcbreeden" target="_blank">train spotting</a> and <a href="https://www.instagram.com/brian.breeden/" target="_blank">photography</a>.
+          In my spare time, I enjoy <a href="https://unsplash.com/@bcbreeden" target="_blank">taking pictures</a> and kayaking!
         </p>
         <p class="introduction_text">
           Thank you for visiting and I hope to hear from you soon!
         </p>
         <!-- Social Media Bar -->
         <div id="social_container">
-          <a href="https://www.twitch.tv/bcbreeden" target="_blank"><img class="social_icon" src="{{ url_for('static', filename='img/twitch.png') }}"></a>
           <a href="https://twitter.com/BCBreeden" target="_blank"><img class="social_icon" src="{{ url_for('static', filename='img/twitter.png') }}"></a>
           <a href="https://www.linkedin.com/in/brian-breeden/" target="_blank"><img class="social_icon" src="{{ url_for('static', filename='img/linkedin.png') }}"></a>
           <a href="https://github.com/BBreeden" target="_blank"><img class="social_icon" src="{{ url_for('static', filename='img/github.png') }}"></a>
@@ -50,57 +49,6 @@
   </div>
 
   <div id="container_main">
-
-    <!-- INTRODUCTION -->
-    <div id="introduction">
-      <div id="introduction_container">
-        <div id="greeting_container">
-          <h1 class="greeting">Brian Breeden</h1>
-          <h2 class="greeting">Engineer, Analyst, Space Nerd</h2>
-        </div>
-
-        <div id="menu">
-          <a href="#projects"><span class="menu_item">Projects</span></a><span class="divider"> | </span>
-          <a href="#employment"><span class="menu_item">Employment</span></a><span class="divider"> | </span>
-          <a href="#education"><span class="menu_item">Education</span></a>
-        </div>
-          <p class="introduction_text">
-            When I was four years old, I received my very first lego set. I didn't know it at the time, but I was already building a skillset. Legos train the builder to do several things. For example, it teaches us to read and apply documentation (in the form of an instruction manual), to break a larger project down into managable pieces, and to design reusable components that can be used multiple times. I use these concepts everyday on the job and in my personal projects.
-          </p>
-          <p class="introduction_text">
-            In my spare time, I enjoy learning new technologies and programming languages. I also enjoy <a href="https://unsplash.com/@bcbreeden" target="_blank">train spotting</a> and <a href="https://www.instagram.com/brian.breeden/" target="_blank">photography</a>.
-          </p>
-
-
-          <button type="button" id="contact_form_button">Let's get in touch!</button>
-          <div id="form">
-            <div id="form_container">
-
-            {% block content %}
-            
-              <form method='POST' action="{{ url_for('process_form') }}">
-                {{ form.name.label(id='form_name_label') }} <br />
-                {{ form.name(id='form_name') }}<br />
-
-                {{ form.email.label(id='email_form_label') }}<br />
-                {{ form.email(id='form_email') }}<br />
-
-                {{ form.body.label(id='form_message_label') }}<br />
-                {{ form.body(cols="40", rows="5", id='form_message') }}<br />
-
-                {{ form.submit(id='submit_button') }}
-              </form>
-
-              {% endblock %}
-
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-
-
     <!-- PROJECTS -->
     <div id="projects">
         <div id="projects_container">
@@ -201,41 +149,26 @@
       </div>
     </div>
 
-    <!-- Education -->
-    <div id="education">
-      <div id="education_container">
-        
-        <div id="education_header">
-          <h3 class="title">Education</h3>
-        </div>
+    <div id="form">
+      <div id="form_container">
 
-        <div class="education_element">
-          <div class="education_logo">
-            <a href="https://vt.edu/" target="_blank"><img src="{{ url_for('static', filename='img/vt.png') }}"></a>
-          </div>
-          <div class="education_desc">
-            <h3><a href="https://vtmit.vt.edu/" target="_blank">Masters of Information Technology</a></h3>
-            <h3><a href="https://vtmit.vt.edu/academics/graduate-certificates.html" target="_blank">Graduate Certificate in Software Development</a></h3>
-            <p class="introduction_text">
-              The Masters of Information Technology program focused on building a foundation in software engineering, database management, data modeling, and data analysis.
-            </p>
-          </div>
-        </div>
+      {% block content %}
+      
+        <form method='POST' action="{{ url_for('process_form') }}">
+          {{ form.name.label(id='form_name_label') }} <br />
+          {{ form.name(id='form_name') }}<br />
 
-        <div class="education_element">
-          <div class="education_logo">
-            <a href="https://su.edu" target="_blank"><img src="{{ url_for('static', filename='img/su.png') }}"></a>
-          </div>
-          <div class="education_desc">
-            <h3><a href="https://www.su.edu/about-us/history/" target="_blank">Bachelors of Science in History</a></h3>
-            <h3><a href="https://www.su.edu/arts/religion-2/" target="_blank">Bachelors of Arts in Religion</a></h3>
-            <p class="introduction_text">
-              During my time at Shenandoah University, I spent my time practicing academic research, writing, and critical analysis.
-            </p>
-          </div>
-        </div>
+          {{ form.email.label(id='email_form_label') }}<br />
+          {{ form.email(id='form_email') }}<br />
 
-        <a href="#introduction">Return to the top.</a>
+          {{ form.body.label(id='form_message_label') }}<br />
+          {{ form.body(cols="40", rows="5", id='form_message') }}<br />
+
+          {{ form.submit(id='submit_button') }}
+        </form>
+
+        {% endblock %}
+
       </div>
     </div>
   </div>

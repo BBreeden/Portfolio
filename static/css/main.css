@@ -1,5 +1,5 @@
 a {
-    color: #527eff;
+    color: #52acff;
     text-decoration: none;
 }
 
@@ -8,7 +8,6 @@ a:hover {
 }
 
 body {
-    /* background-color: #080808; */
     background-image: url( ../img/bg-main.jpg );
 }
 
@@ -100,13 +99,8 @@ button:hover {
     margin-top: 20px;
 }
 
-#email_icon {
-    display: none;
-}
-
 #employment {
     background-image: url( ../img/bg-main-full.jpg );
-    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -123,7 +117,6 @@ button:hover {
 
 #form {
     padding-top: 15px;
-    display: none;
     height: 220px;
 }
 
@@ -133,10 +126,6 @@ button:hover {
 
 #form_header {
     padding-bottom: 5px;
-}
-
-#form_name_label, #form_name, #email_form_label, #form_email, #form_message_label, #form_message, #submit_button {
-    display: none;
 }
 
 #greeting_container {
@@ -156,7 +145,6 @@ button:hover {
 
 #introduction {
     background-color: #080808;
-    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -178,7 +166,6 @@ button:hover {
 #modal_content{
     background-color: #272727;
     width: 600px;
-    /* padding: 10px; */
     border-radius: 15px;
 }
 
@@ -245,7 +232,6 @@ button:hover {
 }
 
 #projects {
-    /* background-image: url( ../img/projects.png ); */
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -289,19 +275,6 @@ button:hover {
     align-items: center;
     height: 100%;
     width: auto;
-}
-
-#education {
-    background-image: url( ../img/skillset.png );
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .body_text {
@@ -433,10 +406,6 @@ Resolution Settings
     } */
     #contact_form_button {
         display: none;
-    }
-
-    #email_icon {
-        display: inline;
     }
 
 }
