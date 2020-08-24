@@ -1,5 +1,5 @@
 a {
-    color: #f18800;
+    color: #527eff;
     text-decoration: none;
 }
 
@@ -37,11 +37,12 @@ footer {
 h1, h2, h3 {
     color: white;
     margin: 0;
+    font-family: 'Unica One', cursive;
 }
 
 h1 {
     font-weight: normal;
-    font-size: 3em;
+    font-size: 4em;
 }
 
 h2 {
@@ -79,13 +80,6 @@ ul {
     columns: 3;
     -webkit-columns: 3;
     -moz-columns: 3;
-}
-
-#arrow_port_container {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-    min-height: 55px;
 }
 
 button:hover {
@@ -224,15 +218,18 @@ button:hover {
 }
 
 #menu {
-    text-align: center;
     letter-spacing: 0.2em;
+    padding-bottom: 20px;
 }
 
 #port_greeting_container {
     display: flex;
-    flex-direction: row;
-    padding-bottom: 30px;
-    display: none;
+    flex-direction: column;
+    width: 500px;
+}
+
+#port_outer {
+    width: 45%;
 }
 
 #portrait {
@@ -241,11 +238,10 @@ button:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 #projects {
@@ -308,10 +304,6 @@ button:hover {
     justify-content: center;
 }
 
-.arrow_port {
-    display: none;
-}
-
 .btn_modal {
     font-size: 16px;
     text-align: left;
@@ -324,6 +316,7 @@ button:hover {
 
 .divider, .menu_item {
     font-size: 28px;
+    font-family: 'Unica One', cursive;
 }
 
 .divider {
@@ -424,10 +417,6 @@ Resolution Settings
 
     #introduction, #projects, #employment, #education{
         height: auto;
-    }
-
-    #arrow_port_container {
-        display: none !important;
     }
 
     /* #form, #form_name_label, #form_name, #email_form_label, #form_email, #form_message_label, #form_message, #submit_button {

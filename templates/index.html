@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet"> 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="{{ url_for('static', filename='js/scroll.js') }}"></script>
@@ -18,27 +18,34 @@
 
 <body>
 
-  <script>
-    // Controls the fade in animations for the arrows on the landing portrait.
-      $(document).ready(function(){
-      $('#port_greeting_container').fadeIn(1000);
-      $('#arrow_port_1').delay(500).fadeIn(1000);
-      $('#arrow_port_2').delay(1000).fadeIn(1000);
-      });
-  </script>
-
   <div id="portrait">
-    <div id="port_greeting_container">
-      <h1 class="greeting">Hi, I'm Brian!</h1>
-    </div>
+    <div id="port_outer">
+      <div id="port_greeting_container">
+        <h1 class="greeting">Hi, I'm Brian.</h1>
+        <div id="menu">
+          <a href="#employment"><span class="menu_item">Employment</span></a><span class="divider"> | </span>
+          <a href="#projects"><span class="menu_item">Projects</span></a><span class="divider"> | </span>
+          <a href="#education"><span class="menu_item">Contact</span></a>
+        </div>
 
-    <div id="arrow_port_container">
-      <a href="#introduction">
-        <img id ="arrow_port_1" class="arrow_port" src="{{ url_for('static', filename='img/arrow.png') }}">
-      </a>
-      <a href="#introduction">
-        <img id ="arrow_port_2" class="arrow_port" src="{{ url_for('static', filename='img/arrow.png') }}">
-      </a>
+        <p class="introduction_text">
+          When I was four years old, I received my very first lego set. I didn't know it at the time, but I was already building a skillset. Legos train the builder to do several things. For example, it teaches us to read and apply documentation (in the form of an instruction manual), to break a larger project down into managable pieces, and to design reusable components that can be used multiple times. I use these concepts everyday on the job and in my personal projects.
+        </p>
+        <p class="introduction_text">
+          In my spare time, I enjoy learning new technologies and programming languages. I also enjoy <a href="https://unsplash.com/@bcbreeden" target="_blank">train spotting</a> and <a href="https://www.instagram.com/brian.breeden/" target="_blank">photography</a>.
+        </p>
+        <p class="introduction_text">
+          Thank you for visiting and I hope to hear from you soon!
+        </p>
+        <!-- Social Media Bar -->
+        <div id="social_container">
+          <a href="https://www.twitch.tv/bcbreeden" target="_blank"><img class="social_icon" src="{{ url_for('static', filename='img/twitch.png') }}"></a>
+          <a href="https://twitter.com/BCBreeden" target="_blank"><img class="social_icon" src="{{ url_for('static', filename='img/twitter.png') }}"></a>
+          <a href="https://www.linkedin.com/in/brian-breeden/" target="_blank"><img class="social_icon" src="{{ url_for('static', filename='img/linkedin.png') }}"></a>
+          <a href="https://github.com/BBreeden" target="_blank"><img class="social_icon" src="{{ url_for('static', filename='img/github.png') }}"></a>
+          <a href="mailto:breedenb@gmail.com"><img class="social_icon" id="email_icon" src="{{ url_for('static', filename='img/email.png') }}"></a>
+        </div>
+      </div>
     </div>
     
   </div>
@@ -58,14 +65,7 @@
           <a href="#employment"><span class="menu_item">Employment</span></a><span class="divider"> | </span>
           <a href="#education"><span class="menu_item">Education</span></a>
         </div>
-        <!-- Social Media Bar -->
-        <div id="social_container">
-          <a href="https://www.twitch.tv/bcbreeden" target="_blank"><img class="social_icon" src="{{ url_for('static', filename='img/twitch.png') }}"></a>
-          <a href="https://twitter.com/BCBreeden" target="_blank"><img class="social_icon" src="{{ url_for('static', filename='img/twitter.png') }}"></a>
-          <a href="https://www.linkedin.com/in/brian-breeden/" target="_blank"><img class="social_icon" src="{{ url_for('static', filename='img/linkedin.png') }}"></a>
-          <a href="https://github.com/BBreeden" target="_blank"><img class="social_icon" src="{{ url_for('static', filename='img/github.png') }}"></a>
-          <a href="mailto:breedenb@gmail.com"><img class="social_icon" id="email_icon" src="{{ url_for('static', filename='img/email.png') }}"></a>
-        </div>
+
 
 
           <p class="introduction_text">
