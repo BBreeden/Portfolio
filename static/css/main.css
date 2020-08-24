@@ -8,7 +8,8 @@ a:hover {
 }
 
 body {
-    background-color: #080808;
+    /* background-color: #080808; */
+    background-image: url( ../img/bg-main.jpg );
 }
 
 button, #submit_button {
@@ -60,7 +61,7 @@ html, body {
 }
 
 html {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Vollkorn', serif;
     scroll-behavior: smooth;
 }
 
@@ -104,10 +105,9 @@ button:hover {
 }
 
 #employment {
-    background-color: #080808;
+    background-image: url( ../img/bg-main-full.jpg );
     height: 100vh;
     width: 100%;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,7 +245,7 @@ button:hover {
 }
 
 #projects {
-    background-image: url( ../img/projects.png );
+    /* background-image: url( ../img/projects.png ); */
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -304,6 +304,11 @@ button:hover {
     justify-content: center;
 }
 
+.body_text {
+    color: #404040;
+    font-size: 18px;
+}
+
 .btn_modal {
     font-size: 16px;
     text-align: left;
@@ -344,7 +349,7 @@ button:hover {
 .introduction_text{
     color: white;
     letter-spacing: 0.1em;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .javascript {
@@ -376,9 +381,13 @@ button:hover {
 }
 
 .title {
-    color: white;
-    font-size: 28px;
+    color: #011627;
+    font-size: 4em;
     font-weight: bolder;
+}
+
+.title_white {
+    color: white !important;
 }
 .education_desc {
     display: flex;
