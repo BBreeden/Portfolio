@@ -49,10 +49,9 @@ h2 {
     font-weight: lighter;
 }
 
-hr {
-    color: white;
+h3 {
+    font-size: 1.5em;
 }
-
 
 html, body {
     height: 100%;
@@ -232,7 +231,6 @@ button:hover {
 }
 
 #projects {
-    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -289,7 +287,7 @@ button:hover {
 }
 
 .css {
-    color: lightblue;
+    color: blueviolet;
 }
 
 .divider, .menu_item {
@@ -312,7 +310,7 @@ button:hover {
 }
 
 .html {
-    color: lightgoldenrodyellow;
+    color: orange;
 }
 
 .icon {
@@ -326,7 +324,7 @@ button:hover {
 }
 
 .javascript {
-    color: lightpink;
+    color: darkcyan;
 }
 
 .jupyter {
@@ -346,7 +344,7 @@ button:hover {
 }
 
 .python {
-    color: lightgreen;
+    color: green;
 }
 
 .social_icon {
