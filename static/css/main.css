@@ -143,7 +143,7 @@ button:hover {
     flex-direction: row;
 }
 
-#introduction_container, #projects_container, #employment_container, #education_container {
+#introduction_container, #projects_container, #employment_container {
     max-width: 900px;
     padding: 20px;
 }
@@ -252,7 +252,7 @@ button:hover {
     align-items: flex-start;
 }
 
-#projects_header, #employment_header, #education_header {
+#projects_header, #employment_header {
     display: flex;
     align-items: flex-end;
     margin-bottom: 20px;
@@ -369,19 +369,6 @@ button:hover {
 .title_white {
     color: white !important;
 }
-.education_desc {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 25px;
-}
-
-.education_element {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 20px;
-
-}
 /* 
 Resolution Settings
 */
@@ -396,7 +383,7 @@ Resolution Settings
         display: none;
     }
 
-    #introduction_container, #projects_container, #employment_container, #education_container {
+    #introduction_container, #projects_container, #employment_container {
         padding: 40px;
     }
 }
