@@ -382,21 +382,9 @@ button:hover {
     padding-bottom: 20px;
 
 }
-
-/* This is for menu classes that are links only. */
-a .menu_item:hover {
-    color:lightgray;
-}
-
 /* 
 Resolution Settings
 */
-
-/* @media only screen and (max-height: 600px){
-    #introduction, #projects, #employment, #education{
-        height: auto;
-    }
-} */
 
 @media only screen and (max-width: 1200px){
     body {
