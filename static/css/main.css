@@ -392,27 +392,23 @@ a .menu_item:hover {
 Resolution Settings
 */
 
-@media only screen and (max-height: 600px){
+/* @media only screen and (max-height: 600px){
     #introduction, #projects, #employment, #education{
         height: auto;
     }
-}
+} */
 
-@media only screen and (max-width: 700px){
-    .icon {
-        width: auto;
-        height: 70px;
+@media only screen and (max-width: 1200px){
+    body {
+        background-color: white !important;
+        background-image: none;
     }
 
-    #introduction, #projects, #employment, #education{
-        height: auto;
-    }
-
-    /* #form, #form_name_label, #form_name, #email_form_label, #form_email, #form_message_label, #form_message, #submit_button {
-        display: inline;
-    } */
-    #contact_form_button {
+    #last_emp {
         display: none;
     }
 
+    #introduction_container, #projects_container, #employment_container, #education_container {
+        padding: 40px;
+    }
 }
