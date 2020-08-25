@@ -64,11 +64,6 @@ html {
     scroll-behavior: smooth;
 }
 
-img {
-    width: 100%;
-    height: auto;
-}
-
 input, textarea {
     border-radius: 5px;
 }
@@ -89,6 +84,10 @@ ul {
 
 button:hover {
     color: lightgray;
+}
+
+#avatar_mobile {
+    display: none;
 }
 
 #contact_form_link {
@@ -338,6 +337,8 @@ button:hover {
 
 .project_header {
     border-radius: 10px;
+    width: 100%;
+    height: auto;
 }
 
 .project_img {
@@ -379,11 +380,31 @@ Resolution Settings
         background-image: none;
     }
 
+    #avatar_mobile {
+        display: inline;
+        align-self: center;
+        padding-bottom: 45px;
+    }
+
     #last_emp {
         display: none;
     }
 
-    #introduction_container, #projects_container, #employment_container {
+    #introduction_container, #projects_container, #employment_container, #port_greeting_container {
         padding: 40px;
+    }
+
+    #portrait {
+        background-image: none;
+        background-color: black;
+        height: auto;
+    }
+
+    #port_greeting_container {
+        width: auto;
+    }
+    
+    #port_outer {
+        width: auto;
     }
 }
