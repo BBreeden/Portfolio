@@ -12,7 +12,7 @@ body {
     background-repeat: repeat-y;
 }
 
-button, #submit_button {
+button {
     border: none;
     background-color: transparent;
     color: #52acff;
@@ -35,7 +35,7 @@ footer {
     padding-bottom: 10px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: white;
     margin: 0;
     font-family: 'Unica One', cursive;
@@ -68,7 +68,11 @@ input, textarea {
     border-radius: 5px;
 }
 
-label, li {
+label {
+    color: #011627;
+}
+
+li {
     color: white;
 }
 
@@ -121,7 +125,15 @@ button:hover {
 
 #form {
     padding-top: 15px;
-    height: 220px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+}
+
+#form_container {
+    padding: 15px;
 }
 
 #form_name, #form_email {
@@ -145,14 +157,6 @@ button:hover {
 #introduction_container, #projects_container, #employment_container {
     max-width: 900px;
     padding: 20px;
-}
-
-#introduction {
-    background-color: #080808;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #modal_body {
@@ -265,9 +269,16 @@ button:hover {
 
 #submit_button {
     font-size: 16px;
+    border: 1px solid;
+    border-color: #011627;
+    background-color: transparent;
+    color: #52acff;
+    cursor: pointer;
+    margin-top: 5px;
 }
 #submit_button:hover {
     color: lightgray;
+    background-color: #011627;
 }
 
 #thanks {
