@@ -277,8 +277,8 @@ button:hover {
     margin-top: 5px;
 }
 #submit_button:hover {
-    color: lightgray;
-    background-color: #011627;
+    color: white;
+    background-color: #011d33;
 }
 
 #thanks {
