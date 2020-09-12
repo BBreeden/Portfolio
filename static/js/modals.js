@@ -10,7 +10,9 @@ var login_tmps_button = document.getElementById('login_tmps');
 var nuke_button = document.getElementById('nuke');
 var sbtm_button = document.getElementById('sbtm');
 var vhr_button = document.getElementById('vhr');
-var yale500_button = document.getElementById('yale500')
+var yale500_button = document.getElementById('yale500');
+var test_lab_button = document.getElementById('test_lab');
+var qe_sql_button = document.getElementById('qe_sql');
 
 close_span.onclick = function (){
     modal.style.display = 'none';
@@ -74,4 +76,22 @@ yale500_button.onclick = function() {
     modal.style.justifyContent = 'center';
     modal_header.innerHTML = 'Yale 500 Series Lock Intergration'
     modal_body.innerHTML = 'This project will always have a soft spot for me because this was the first certification project that I took the lead on. This project centered around the Yale 500 Series locks. This included hardware enrollment, security testing, user code management, and automation integrations. <br /><br />Learn more about these locks <a href="https://us.yalehome.com/en/news/news/2019/yale-launches-product-line-for-professional-installers/" target="_blank">here</a>.'
+}
+
+test_lab_button.onclick = function() {
+    modal.style.display = 'flex';
+    modal.style.display = 'column';
+    modal.style.alignItems = 'center';
+    modal.style.justifyContent = 'center';
+    modal_header.innerHTML = 'Test Lab Maintenance'
+    modal_body.innerHTML = 'The Quality Engineering testing lab is a space that is shared by all of the Quality Engineers on my team. My responsibility is to ensure all devices are funtioning as intended and that the environment is in good condition. This includes maintaining the devices themselves and cleaning/organizing the shared work space.'
+}
+
+qe_sql_button.onclick = function() {
+    modal.style.display = 'flex';
+    modal.style.display = 'column';
+    modal.style.alignItems = 'center';
+    modal.style.justifyContent = 'center';
+    modal_header.innerHTML = 'QE SQL Documentation'
+    modal_body.innerHTML = 'Alarm.com has done an exceptional job at creating an interface for Quality Engineers to work with to answer common questions. However, due to the complicated nature of the problem domain, specialized SQL queries are necessary. I have identified this as a pain point for new team members and have begun collecting queries that can be used by other members of the team. Thus, saving them time from having to write the queries themselves.'
 }
