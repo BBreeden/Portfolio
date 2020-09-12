@@ -13,6 +13,8 @@ var vhr_button = document.getElementById('vhr');
 var yale500_button = document.getElementById('yale500');
 var test_lab_button = document.getElementById('test_lab');
 var qe_sql_button = document.getElementById('qe_sql');
+var water_valve_meter_button = document.getElementById('water_valve_meter');
+var jasco_contact_button = document.getElementById('jasco_contact');
 
 close_span.onclick = function (){
     modal.style.display = 'none';
@@ -94,4 +96,22 @@ qe_sql_button.onclick = function() {
     modal.style.justifyContent = 'center';
     modal_header.innerHTML = 'QE SQL Documentation'
     modal_body.innerHTML = 'Alarm.com has done an exceptional job at creating an interface for Quality Engineers to work with to answer common questions. However, due to the complicated nature of the problem domain, specialized SQL queries are necessary. I have identified this as a pain point for new team members and have begun collecting queries that can be used by other members of the team. Thus, saving them time from having to write the queries themselves.'
+}
+
+water_valve_meter_button.onclick = function() {
+    modal.style.display = 'flex';
+    modal.style.display = 'column';
+    modal.style.alignItems = 'center';
+    modal.style.justifyContent = 'center';
+    modal_header.innerHTML = 'Water Valve and Meter'
+    modal_body.innerHTML = 'Water damage costs $9.1 billion dollars every year. To help alleviate this problem, we released a Smart Water Valve & Meter. This allows our users to create automation rules to automatically turn off their water if a leak is detected. As the lead Quality Engineer on this project, I designed and executed an integration test plan. Working alongside our Building36 team, I tested all of the features of this device to ensure the integration with our <a href="https://www.pointcentral.com/" target="_blank">PointCentral</a> partner functions as intended. <br /><br /> <a href="https://www.alarm.com/about/press/PressGeneric.aspx?cmid=670" target="_blank">Learn more about the product here.</a> '
+}
+
+jasco_contact_button.onclick = function() {
+    modal.style.display = 'flex';
+    modal.style.display = 'column';
+    modal.style.alignItems = 'center';
+    modal.style.justifyContent = 'center';
+    modal_header.innerHTML = 'Jasco Contact Sensor'
+    modal_body.innerHTML = 'The contact sensor is a staple in a security system. Alerting the user if an entry point is open or closed forms the centerpiece of our security and automation suite. This allows our users to configure their devices to put their system into an alarm if their business or property is accessed when no one is present. Additionally, users can configure automation rules to execute system actions if an entry point is accessed. As the lead Quality Engineer on this project, I composed and executed a full regression test suite to ensure this new generation of contact sensor meets our expectations for our commercial and property rental partners.'
 }
