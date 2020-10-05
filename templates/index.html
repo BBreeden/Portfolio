@@ -56,23 +56,6 @@
           <div id="projects_header">
             <h3 class="title">Select Projects</h3>
           </div>
-          
-          <div class="project_item">
-            <div class="project_desc">
-              <img class="project_header" src="{{ url_for('static', filename='img/portfolio_header.jpg') }}">
-              <h3><a href="{{ url_for('index') }}">Personal Portfolio</a></h3>
-              <p class="project_tech_p">
-                <span class="python">[Python]</span>
-                <span class="html">[HTML]</span>
-                <span class="css">[CSS]</span>
-                <span class="javascript">[JavaScript/JQuery]</span>
-              </p>
-              <p class="body_text">
-                You are looking at it! This project was built from the ground up using Flask to display my select projects and professional background. <br />
-                <a href="https://github.com/BBreeden/portfolio" target="_blank">Explore the code behind this project.</a>
-              </p>
-            </div>
-          </div>
 
           <div class="project_item">
             <div class="project_desc">
@@ -85,22 +68,37 @@
                 <span class="javascript">[JavaScript]</span>
               </p>
               <p class="body_text"">
-                On December 28, 2015, I was sitting at a cafe eating breakfast when I learned that SpaceX had recovered a first stage rocket the night before. I didn't understand the significance at the time, but it changed space exploration forever. Years later, I am still a big fan of space. I like to stay up to date with upcoming rocket launches and that is what this website does.<br />
+                On December 28, 2015, I was sitting at a cafe eating breakfast when I learned that SpaceX had recovered a first stage rocket the night before. I didn't understand the significance at the time, but it changed space exploration forever. Years later, I am still a big fan of space. I like to stay up to date with upcoming rocket launches and that is what this app helps me do.<br />
                 <a href="https://github.com/BBreeden/next_launch" target="_blank">Check out the source code here.</a>
+              </p>
+            </div>
+          </div>
+          
+          <div class="project_item">
+            <div class="project_desc">
+              <img class="project_header" src="{{ url_for('static', filename='img/nl_bot_header.png') }}">
+              <h3><a href="https://twitter.com/NextLaunchInfo" target="_blank">NextLaunch Twitter Bot</a></h3>
+              <p class="project_tech_p">
+                <span class="python">[Python]</span>
+              </p>
+              <p class="body_text">
+                This project is a companion to the NextLaunch.info web app project. This program will poll the API every hour and if there is a rocket launch happening within the hour following the request, a twitter post will be made promoting the launch. <br />
+                <a href="https://twitter.com/NextLaunchInfo" target="_blank">Check out how it works behind the scenes!</a>
               </p>
             </div>
           </div>
 
           <div class="project_item">
             <div class="project_desc">
-              <img class="project_header" src="{{ url_for('static', filename='img/pyhl_header.jpg') }}">
-              <h3><a href="https://github.com/BBreeden/nhl-team-analysis" target="_blank">pyHL (Python Hockey League) - Hockey Analytics</a></h3>
+              <img class="project_header" src="{{ url_for('static', filename='img/tw_polling_header.png') }}">
+              <h3><a href="https://github.com/BBreeden/twitter_user_polling" target="_blank">Twitter User Polling</a></h3>
               <p class="project_tech_p">
                 <span class="python">[Python]</span>
               </p>
               <p class="body_text"">
-                Growing up, my dad and I would watch hockey together. We followed the Washington Capitals and cheered for names like 'Bondra', 'Kolzing', and 'Ovechkin'. I love this game and this tool helps me understand it better. Designed as a task to be run daily during the NHL season, this project will create a side by side report of the NHL teams playing that day.<br />
-                <a href="https://github.com/BBreeden/nhl-team-analysis" target="_blank">View the code.</a> </br /><a href="" target="_blank">Check out a sample report.</a>
+                Love it or hate it, Twitter is a unique platform. I wanted to study and document tweets from specific users. I wrote this program to poll a user profile every so often and document any new tweets that user composed. These tweets are then saved as JSON objects using MongoDB for future analysis. <br />
+                <img class="project_header" src="{{ url_for('static', filename='img/user_poll_sample.png') }}"> <br />
+                <a href="https://github.com/BBreeden/twitter_user_polling" target="_blank">View the code.</a>
               </p>
             </div>
           </div>
