@@ -32,7 +32,7 @@ com_rep_button.onclick = function() {
     modal.style.alignItems = 'center';
     modal.style.justifyContent = 'center';
     modal_header.innerHTML = 'Commercial Reports';
-    modal_body.innerHTML = 'Commercial reporting allows our users to gain data driven insight to their business. As of this writing, there are eight different report types that fall under this category. As the lead Quality Engineer on this project, I tested the report service distribution behaviors, the user interface, and the integrity of the data that made up each respective report. <br /><br />View a sample report.';
+    modal_body.innerHTML = 'Commercial reporting allows our users to gain data driven insight to their business. As of this writing, there are eight different report types that fall under this category. As the lead Quality Engineer on this project, I tested the report service distribution behaviors, the user interface, and the integrity of the data that made up each respective report.';
 }
 
 login_tmps_button.onclick = function() {
