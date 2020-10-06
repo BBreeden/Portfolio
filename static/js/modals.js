@@ -68,7 +68,7 @@ vhr_button.onclick = function() {
     modal.style.alignItems = 'center';
     modal.style.justifyContent = 'center';
     modal_header.innerHTML = 'Video Health Report'
-    modal_body.innerHTML = 'One of the biggest concerns for our customers is security. The foundation of every good security system is the video cameras. Out team developed a report that gives our customers insight on the status of their video cameras. This includes performance metrics, camera status, camera snapshots, and recording hardware updates (known as a <a href="https://www.alarmgrid.com/faq/how-does-an-alarm-dot-com-svr-work" target="_blank">Stream Video Recorder</a>). <br /><br />As the lead on this quality project, I developed a test plan to verify each, individual performance metric. I also tested the report distribution systems and monitored performance with stressed video accounts. View a sample Video Health Report.'
+    modal_body.innerHTML = 'One of the biggest concerns for our customers is security. The foundation of every good security system is the video cameras. Out team developed a report that gives our customers insight on the status of their video cameras. This includes performance metrics, camera status, camera snapshots, and recording hardware updates (known as a <a href="https://www.alarmgrid.com/faq/how-does-an-alarm-dot-com-svr-work" target="_blank">Stream Video Recorder</a>). <br /><br />As the lead on this quality project, I developed a test plan to verify each, individual performance metric. I also tested the report distribution systems and monitored performance with stressed video accounts.'
 }
 
 yale500_button.onclick = function() {
