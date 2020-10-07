@@ -41,7 +41,7 @@ login_tmps_button.onclick = function() {
     modal.style.alignItems = 'center';
     modal.style.justifyContent = 'center';
     modal_header.innerHTML = 'Login Templates';
-    modal_body.innerHTML = 'For each security system, there are logins that a user can configure for other individuals to log into their system. This is a key part of the commercial domain due to the need to allow employees and other support staff access to the security system. This project allows the users to create templates for their logins. This enables our users to same time and maintain consistency across different login types. <br /><br />As the lead QE on this project I leveraged a complex text plan to test various login template combinations, verified user perissions across different system levels, and monitored performance on stressed systems.';
+    modal_body.innerHTML = 'For each security system, there are logins that a user can configure for other individuals to log into their system. This is a key part of the commercial domain due to the need to allow employees and other support staff access to the security system. This project allows the users to create templates for their logins. This enables our users to save time and maintain consistency across different login types. <br /><br />As the lead QE on this project I leveraged a complex text plan to test various login template combinations, verified user perissions across different system levels, and monitored performance on stressed systems.';
 }
 
 nuke_button.onclick = function() {
@@ -68,7 +68,7 @@ vhr_button.onclick = function() {
     modal.style.alignItems = 'center';
     modal.style.justifyContent = 'center';
     modal_header.innerHTML = 'Video Health Report'
-    modal_body.innerHTML = 'One of the biggest concerns for our customers is security. The foundation of every good security system is the video cameras. Out team developed a report that gives our customers insight on the status of their video cameras. This includes performance metrics, camera status, camera snapshots, and recording hardware updates (known as a <a href="https://www.alarmgrid.com/faq/how-does-an-alarm-dot-com-svr-work" target="_blank">Stream Video Recorder</a>). <br /><br />As the lead on this quality project, I developed a test plan to verify each, individual performance metric. I also tested the report distribution systems and monitored performance with stressed video accounts.'
+    modal_body.innerHTML = 'One of the biggest concerns for our customers is security. The foundation of every good security system is the video camera. Out team developed a report that gives our customers insight on the status of their video cameras. This includes performance metrics, camera status, camera snapshots, and recording hardware updates (known as a <a href="https://www.alarmgrid.com/faq/how-does-an-alarm-dot-com-svr-work" target="_blank">Stream Video Recorder</a>). <br /><br />As the lead on this quality project, I developed a test plan to verify each, individual performance metric. I also tested the report distribution systems and monitored performance with stressed video accounts.'
 }
 
 yale500_button.onclick = function() {

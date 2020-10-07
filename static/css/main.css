@@ -419,3 +419,9 @@ Resolution Settings
         width: auto;
     }
 }
+@media only screen and (max-width: 800px){
+    #modal_content {
+        width: auto;
+        margin: 20px;
+    }
+}
