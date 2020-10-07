@@ -10,15 +10,16 @@
 
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@0;1&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
 
     <div id="thanks">
         <div id="thanks_container">
-            <h2>Thank you!</h2>
-            <p class="introduction_text">I check my messages regularly, I will be in touch soon!</p>
+            <h2 id="thanks_header">Thank you!</h2>
+            <p class="body_text">I check my messages regularly, I will be in touch soon!</p>
             <a href="{{ url_for( 'index', _anchor='introduction' ) }}">Go back.</a>
         </div>
 

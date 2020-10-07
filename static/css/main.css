@@ -290,6 +290,10 @@ button:hover {
     width: auto;
 }
 
+#thanks_header {
+    color: #404040 !important;
+}
+
 .body_text {
     color: #404040;
     font-size: 18px;
