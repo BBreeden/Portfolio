@@ -34,5 +34,5 @@ def process_form():
         mail.send(msg)
         return render_template('thank_you.html')
     elif request.method == 'GET':
-        # return redirect(url_for('index'))
-        return render_template('thank_you.html')
+        return redirect(url_for('index'))
+        # return render_template('thank_you.html')

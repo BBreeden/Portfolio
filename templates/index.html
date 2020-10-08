@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Brian Breeden</title>
   <meta name="description" content="Brian Breeden Portfolio">
@@ -11,7 +12,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@0;1&display=swap" rel="stylesheet"> 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   <script src="{{ url_for('static', filename='js/scroll.js') }}"></script>
 </head>
 
@@ -20,7 +21,7 @@
   <div id="portrait">
     <div id="port_outer">
       <div id="port_greeting_container">
-        <img id="avatar_mobile" src="{{ url_for('static', filename='img/ava_round.png') }}">
+        <img id="avatar_mobile" alt="A portrait of Brian in the shape of a circle." src="{{ url_for('static', filename='img/ava_round.png') }}">
         <h1 class="greeting">Hi, I'm Brian.</h1>
         <div id="menu">
           <a href="#projects"><span class="menu_item">Projects</span></a><span class="divider"> | </span>
@@ -32,17 +33,17 @@
           I am a Quality Engineer who also likes to code! My favorite topics include Python, CSS, and JavaScript.
         </p>
         <p class="introduction_text">
-          In my spare time, I enjoy <a href="https://unsplash.com/@bcbreeden" target="_blank">taking pictures</a> and kayaking!
+          In my spare time, I enjoy <a href="https://unsplash.com/@bcbreeden" rel="noreferrer" target="_blank">taking pictures</a> and kayaking!
         </p>
         <p class="introduction_text">
           Thank you for visiting and I hope to hear from you soon!
         </p>
         <!-- Social Media Bar -->
         <div id="social_container">
-          <a href="https://twitter.com/BCBreeden" target="_blank"><img class="social_icon" src="{{ url_for('static', filename='img/twitter.png') }}"></a>
-          <a href="https://www.linkedin.com/in/brian-breeden/" target="_blank"><img class="social_icon" src="{{ url_for('static', filename='img/linkedin.png') }}"></a>
-          <a href="https://github.com/BBreeden" target="_blank"><img class="social_icon" src="{{ url_for('static', filename='img/github.png') }}"></a>
-          <a href="mailto:breedenb@gmail.com"><img class="social_icon" id="email_icon" src="{{ url_for('static', filename='img/email.png') }}"></a>
+          <a href="https://twitter.com/BCBreeden" rel="noreferrer" target="_blank"><img class="social_icon" alt="A picture of the Twitter logo." src="{{ url_for('static', filename='img/twitter.png') }}"></a>
+          <a href="https://www.linkedin.com/in/brian-breeden/" rel="noreferrer" target="_blank"><img class="social_icon" alt="A picture of the LinkedIn logo." src="{{ url_for('static', filename='img/linkedin.png') }}"></a>
+          <a href="https://github.com/BBreeden" rel="noreferrer" target="_blank"><img class="social_icon" alt="A picture of the Github logo." src="{{ url_for('static', filename='img/github.png') }}"></a>
+          <a href="mailto:breedenb@gmail.com"><img class="social_icon" alt="A logo of an envelope to illustrate an email." id="email_icon" src="{{ url_for('static', filename='img/email.png') }}"></a>
         </div>
       </div>
     </div>
@@ -54,13 +55,13 @@
     <div id="projects">
         <div id="projects_container">
           <div id="projects_header">
-            <h3 class="title">Select Projects</h3>
+            <h2 class="title">Select Projects</h2>
           </div>
 
           <div class="project_item">
             <div class="project_desc">
-              <img class="project_header" src="{{ url_for('static', filename='img/nl_header.png') }}">
-              <h3><a href="http://www.nextlaunch.info" target="_blank">NextLaunch.info</a></h3>
+              <img class="project_header" alt="A banner displaying a rocket and a circle." src="{{ url_for('static', filename='img/nl_header.png') }}">
+              <h3><a href="http://www.nextlaunch.info" rel="noreferrer" target="_blank">NextLaunch.info</a></h3>
               <p class="project_tech_p">
                 <span class="python">[Python]</span>
                 <span class="html">[HTML]</span>
@@ -69,36 +70,36 @@
               </p>
               <p class="body_text"">
                 On December 28, 2015, I was sitting at a cafe eating breakfast when I learned that SpaceX had recovered a first stage rocket the night before. I didn't understand the significance at the time, but it changed space exploration forever. Years later, I am still a big fan of space. I like to stay up to date with upcoming rocket launches and that is what this app helps me do.<br />
-                <a href="https://github.com/BBreeden/next_launch" target="_blank">Check out the source code here.</a>
+                <a href="https://github.com/BBreeden/next_launch" rel="noreferrer" target="_blank">Check out the source code here.</a>
               </p>
             </div>
           </div>
           
           <div class="project_item">
             <div class="project_desc">
-              <img class="project_header" src="{{ url_for('static', filename='img/nl_bot_header.png') }}">
-              <h3><a href="https://twitter.com/NextLaunchInfo" target="_blank">NextLaunch Twitter Bot</a></h3>
+              <img class="project_header" alt="An image displaying a rocket and a circle. Inside of the circle is a robot." src="{{ url_for('static', filename='img/nl_bot_header.png') }}">
+              <h3><a href="https://twitter.com/NextLaunchInfo" rel="noreferrer" target="_blank">NextLaunch Twitter Bot</a></h3>
               <p class="project_tech_p">
                 <span class="python">[Python]</span>
               </p>
               <p class="body_text">
                 This project is a companion to the NextLaunch.info web app project. This program will automatically create a Twitter post if there is a rocket launch less than an hour away! <br />
-                <a href="https://github.com/BBreeden/next_launch_bot" target="_blank">Check out how it works behind the scenes!</a>
+                <a href="https://github.com/BBreeden/next_launch_bot" rel="noreferrer" target="_blank">Check out how it works behind the scenes!</a>
               </p>
             </div>
           </div>
 
           <div class="project_item">
             <div class="project_desc">
-              <img class="project_header" src="{{ url_for('static', filename='img/tw_polling_header.png') }}">
-              <h3><a href="https://github.com/BBreeden/twitter_user_polling" target="_blank">Twitter User Polling</a></h3>
+              <img class="project_header" alt="An image of the Twitter logo with alternating arrows point to a user logo." src="{{ url_for('static', filename='img/tw_polling_header.png') }}">
+              <h3><a href="https://github.com/BBreeden/twitter_user_polling" rel="noreferrer" target="_blank">Twitter User Polling</a></h3>
               <p class="project_tech_p">
                 <span class="python">[Python]</span>
               </p>
               <p class="body_text"">
                 Love it or hate it, Twitter is a unique platform. I wanted to study and document tweets from specific users. I wrote this program to poll a user profile every so often and document any new tweets that user composed. These tweets are then saved as JSON objects using MongoDB for future analysis. <br />
-                <a href="https://github.com/BBreeden/twitter_user_polling" target="_blank">View the code.</a> <br />
-                <img class="project_header" src="{{ url_for('static', filename='img/user_poll_sample.png') }}">
+                <a href="https://github.com/BBreeden/twitter_user_polling" rel="noreferrer" target="_blank">View the code.</a> <br />
+                <img class="project_header" alt="An image of a JSON snippet demonstrating the data structure of a saved tweet." src="{{ url_for('static', filename='img/user_poll_sample.png') }}">
               </p>
             </div>
           </div>
@@ -116,7 +117,7 @@
         </div>
 
         <div class="emp_item">
-        <h3>Quality Engineer - <a href="http://www.Alarm.com" target="_blank">Alarm.com</a> <a href="https://www.alarm.com/business-solutions/" target="_blank">Commercial</a> (2020-Present)</h3>
+        <h3>Quality Engineer - <a href="http://www.Alarm.com" rel="noreferrer" target="_blank">Alarm.com</a> <a href="https://www.alarm.com/business-solutions/" rel="noreferrer" target="_blank">Commercial</a> (2020-Present)</h3>
         <p class="introduction_text">
           Since I have been promoted to Quality Engineer, I have continued to refine my test plan design and expand my scope to include mobile testing and cross team collaborations. Additionally, I have begun participating in new hire onboarding and mentoring. I have led the following projects and initiatives:
           <ul>
@@ -130,7 +131,7 @@
         <hr>
 
         <div class="emp_item">
-          <h3>Associate Quality Engineer - <a href="http://www.Alarm.com" target="_blank">Alarm.com</a> <a href="https://www.alarm.com/business-solutions/" target="_blank">Commercial</a> (2019-2020)</h3>
+          <h3>Associate Quality Engineer - <a href="http://www.Alarm.com" rel="noreferrer" target="_blank">Alarm.com</a> <a href="https://www.alarm.com/business-solutions/" rel="noreferrer" target="_blank">Commercial</a> (2019-2020)</h3>
           <p class="introduction_text">
             As an Associate Quality Engineer, my primary duties involved extensive testing during the weekly build cycle and the certification of new products & features. A few of the certification projects that I led were:
             <ul>
@@ -145,7 +146,7 @@
         </div>
         <div class="emp_item" id="last_emp">
           <hr>
-          <h3>Campus Operations Specialist - <a href="http://www.lfcc.edu" target="_blank">Lord Fairfax Community College</a> (2017-2019)</h3>
+          <h3>Campus Operations Specialist - <a href="http://www.lfcc.edu" rel="noreferrer" target="_blank">Lord Fairfax Community College</a> (2017-2019)</h3>
           <p class="introduction_text">
           My primary responsibilities were to work with college leadership to ensure campus activites and functions ran as smoothly as possible. This includes working directly with students to solve administrative problems, ensure faculty complied with contractual obligations, and coordinate with all departments within the college to prepare and run events.
           </p>

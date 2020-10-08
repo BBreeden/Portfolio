@@ -68,7 +68,7 @@ vhr_button.onclick = function() {
     modal.style.alignItems = 'center';
     modal.style.justifyContent = 'center';
     modal_header.innerHTML = 'Video Health Report'
-    modal_body.innerHTML = 'One of the biggest concerns for our customers is security. The foundation of every good security system is the video camera. Out team developed a report that gives our customers insight on the status of their video cameras. This includes performance metrics, camera status, camera snapshots, and recording hardware updates (known as a <a href="https://www.alarmgrid.com/faq/how-does-an-alarm-dot-com-svr-work" target="_blank">Stream Video Recorder</a>). <br /><br />As the lead on this quality project, I developed a test plan to verify each, individual performance metric. I also tested the report distribution systems and monitored performance with stressed video accounts.'
+    modal_body.innerHTML = 'One of the biggest concerns for our customers is security. The foundation of every good security system is the video camera. Out team developed a report that gives our customers insight on the status of their video cameras. This includes performance metrics, camera status, camera snapshots, and recording hardware updates (known as a <a href="https://www.alarmgrid.com/faq/how-does-an-alarm-dot-com-svr-work" rel="noreferrer" target="_blank">Stream Video Recorder</a>). <br /><br />As the lead on this quality project, I developed a test plan to verify each, individual performance metric. I also tested the report distribution systems and monitored performance with stressed video accounts.'
 }
 
 yale500_button.onclick = function() {
@@ -77,7 +77,7 @@ yale500_button.onclick = function() {
     modal.style.alignItems = 'center';
     modal.style.justifyContent = 'center';
     modal_header.innerHTML = 'Yale 500 Series Lock Intergration'
-    modal_body.innerHTML = 'This project will always have a soft spot for me because this was the first certification project that I took the lead on. This project centered around the Yale 500 Series locks. This included hardware enrollment, security testing, user code management, and automation integrations. <br /><br />Learn more about these locks <a href="https://us.yalehome.com/en/news/news/2019/yale-launches-product-line-for-professional-installers/" target="_blank">here</a>.'
+    modal_body.innerHTML = 'This project will always have a soft spot for me because this was the first certification project that I took the lead on. This project centered around the Yale 500 Series locks. This included hardware enrollment, security testing, user code management, and automation integrations. <br /><br />Learn more about these locks <a href="https://us.yalehome.com/en/news/news/2019/yale-launches-product-line-for-professional-installers/" rel="noreferrer" target="_blank">here</a>.'
 }
 
 test_lab_button.onclick = function() {
@@ -104,7 +104,7 @@ water_valve_meter_button.onclick = function() {
     modal.style.alignItems = 'center';
     modal.style.justifyContent = 'center';
     modal_header.innerHTML = 'Water Valve and Meter'
-    modal_body.innerHTML = 'Water damage costs $9.1 billion dollars every year. To help alleviate this problem, we released a Smart Water Valve & Meter. This allows our users to create automation rules to automatically turn off their water if a leak is detected. As the lead Quality Engineer on this project, I designed and executed an integration test plan. Working alongside our Building36 team, I tested all of the features of this device to ensure the integration with our <a href="https://www.pointcentral.com/" target="_blank">PointCentral</a> partner functions as intended. <br /><br /> <a href="https://www.alarm.com/about/press/PressGeneric.aspx?cmid=670" target="_blank">Learn more about the product here.</a> '
+    modal_body.innerHTML = 'Water damage costs $9.1 billion dollars every year. To help alleviate this problem, we released a Smart Water Valve & Meter. This allows our users to create automation rules to automatically turn off their water if a leak is detected. As the lead Quality Engineer on this project, I designed and executed an integration test plan. Working alongside our Building36 team, I tested all of the features of this device to ensure the integration with our <a href="https://www.pointcentral.com/" rel="noreferrer" target="_blank">PointCentral</a> partner functions as intended. <br /><br /> <a href="https://www.alarm.com/about/press/PressGeneric.aspx?cmid=670" rel="noreferrer" target="_blank">Learn more about the product here.</a> '
 }
 
 jasco_contact_button.onclick = function() {

@@ -1,5 +1,12 @@
+:root {
+    --link-color: #52acff;
+    --dark-accent: #011d33;
+    --body-text-dark: #404040;
+    --body-text-light: white;
+  }
+
 a {
-    color: #52acff;
+    color: var(--link-color);
     text-decoration: none;
 }
 
@@ -15,7 +22,7 @@ body {
 button {
     border: none;
     background-color: transparent;
-    color: #52acff;
+    color: var(--link-color);
     cursor: pointer;
     padding: 0;
 }
@@ -36,7 +43,7 @@ footer {
 }
 
 h1, h2, h3, h4 {
-    color: white;
+    color: var(--body-text-light);
     margin: 0;
     font-family: 'Unica One', cursive;
 }
@@ -73,7 +80,7 @@ label {
 }
 
 li {
-    color: white;
+    color: var(--body-text-light);
 }
 
 textarea {
@@ -178,7 +185,7 @@ button:hover {
 }
 
 #modal_close {
-    color: #52acff;;
+    color: var(--link-color);
     font-size: 28px;
     font-weight: bold;
     padding-right: 10px;
@@ -272,13 +279,13 @@ button:hover {
     border: 1px solid;
     border-color: #011627;
     background-color: transparent;
-    color: #52acff;
+    color: var(--dark-accent);
     cursor: pointer;
     margin-top: 5px;
 }
 #submit_button:hover {
-    color: white;
-    background-color: #011d33;
+    color: var(--body-text-light);
+    background-color: var(--dark-accent);
 }
 
 #thanks {
@@ -291,11 +298,11 @@ button:hover {
 }
 
 #thanks_header {
-    color: #404040 !important;
+    color: var(--body-text-dark) !important;
 }
 
 .body_text {
-    color: #404040;
+    color: var(--body-text-dark);
     font-size: 18px;
 }
 
@@ -315,7 +322,7 @@ button:hover {
 }
 
 .divider {
-    color: white;
+    color: var(--body-text-light);
 }
 
 .emp_item {
@@ -337,7 +344,7 @@ button:hover {
 }
 
 .introduction_text{
-    color: white;
+    color: var(--body-text-light);
     letter-spacing: 0.1em;
     font-size: 18px;
 }
@@ -383,7 +390,7 @@ button:hover {
 }
 
 .title_white {
-    color: white !important;
+    color: var(--body-text-light) !important;
 }
 /* 
 Resolution Settings
@@ -423,7 +430,7 @@ Resolution Settings
         width: auto;
     }
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
     #modal_content {
         width: auto;
         margin: 20px;
