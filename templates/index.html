@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
   <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@0;1&display=swap" rel="stylesheet"> 
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="{{ url_for('static', filename='js/scroll.js') }}"></script>
 </head>
 
@@ -68,7 +68,7 @@
                 <span class="css">[CSS]</span>
                 <span class="javascript">[JavaScript]</span>
               </p>
-              <p class="body_text"">
+              <p class="body_text">
                 On December 28, 2015, I was sitting at a cafe eating breakfast when I learned that SpaceX had recovered a first stage rocket the night before. I didn't understand the significance at the time, but it changed space exploration forever. Years later, I am still a big fan of space. I like to stay up to date with upcoming rocket launches and that is what this app helps me do.<br />
                 <a href="https://github.com/BBreeden/next_launch" rel="noreferrer" target="_blank">Check out the source code here.</a>
               </p>
@@ -96,7 +96,7 @@
               <p class="project_tech_p">
                 <span class="python">[Python]</span>
               </p>
-              <p class="body_text"">
+              <p class="body_text">
                 Love it or hate it, Twitter is a unique platform. I wanted to study and document tweets from specific users. I wrote this program to poll a user profile every so often and document any new tweets that user composed. These tweets are then saved as JSON objects using MongoDB for future analysis. <br />
                 <a href="https://github.com/BBreeden/twitter_user_polling" rel="noreferrer" target="_blank">View the code.</a> <br />
                 <img class="project_header" alt="An image of a JSON snippet demonstrating the data structure of a saved tweet." src="{{ url_for('static', filename='img/user_poll_sample.png') }}">
