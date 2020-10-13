@@ -435,4 +435,8 @@ Resolution Settings
         width: auto;
         margin: 20px;
     }
+
+    ul {
+        columns: 1;
+    }
 }
