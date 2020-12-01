@@ -35,4 +35,3 @@ def process_form():
         return render_template('thank_you.html')
     elif request.method == 'GET':
         return redirect(url_for('index'))
-        # return render_template('thank_you.html')
