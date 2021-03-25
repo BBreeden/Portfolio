@@ -29,7 +29,7 @@ def index():
 @app.route('/thank_you', methods=['GET','POST'])
 def process_form():
     if request.method == 'POST':
-        msg = Message('A Message from your Portfolio', sender='bbtimeless@gmail.com', recipients=['breedenb@gmail.com'])
+        msg = Message('A Message from your Portfolio', sender='bcbsuperuser@gmail.com', recipients=['breedenb@gmail.com'])
         msg.body = (request.form['name'] + '\n' + request.form['email'] + '\n' + request.form['body'])
         mail.send(msg)
         return render_template('thank_you.html')
